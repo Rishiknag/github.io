@@ -3,13 +3,13 @@
 	--e-global-color-secondary: #54595F;
 	--e-global-color-text: #7A7A7A;
 	--e-global-color-accent: #61CE70;
-	--e-global-typography-primary-font-family: "Roboto";
+	--e-global-typography-primary-font-family: "Segoe UI";
 	--e-global-typography-primary-font-weight: 600;
-	--e-global-typography-secondary-font-family: "Roboto Slab";
+	--e-global-typography-secondary-font-family: "Segoe UI";
 	--e-global-typography-secondary-font-weight: 400;
-	--e-global-typography-text-font-family: "Roboto";
+	--e-global-typography-text-font-family: "Segoe UI";
 	--e-global-typography-text-font-weight: 400;
-	--e-global-typography-accent-font-family: "Roboto";
+	--e-global-typography-accent-font-family: "Segoe UI";
 	--e-global-typography-accent-font-weight: 500;
 }
 .elementor-section.elementor-section-boxed>.elementor-container {
@@ -364,7 +364,7 @@
 }
 .elementor-2392 .elementor-element.elementor-element-2e3514a .ct-counter .ct-counter-number-value {
 	color: #00D8FF;
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 55px;
 	font-weight: 400;
 }
@@ -375,7 +375,7 @@
 	color: #00D8FF;
 }
 .elementor-2392 .elementor-element.elementor-element-2e3514a .ct-counter .ct-counter-number .ct-counter-number-suffix, .elementor-2392 .elementor-element.elementor-element-2e3514a .ct-counter .ct-counter-number .ct-counter-number-prefix {
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 55px;
 	font-weight: 400;
 }
@@ -394,7 +394,7 @@
 }
 .elementor-2392 .elementor-element.elementor-element-94436e0 .ct-counter .ct-counter-number-value {
 	color: #00D8FF;
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 55px;
 	font-weight: 400;
 }
@@ -405,7 +405,7 @@
 	color: #00D8FF;
 }
 .elementor-2392 .elementor-element.elementor-element-94436e0 .ct-counter .ct-counter-number .ct-counter-number-suffix, .elementor-2392 .elementor-element.elementor-element-94436e0 .ct-counter .ct-counter-number .ct-counter-number-prefix {
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 55px;
 	font-weight: 400;
 }
@@ -424,7 +424,7 @@
 }
 .elementor-2392 .elementor-element.elementor-element-9d19ef0 .ct-counter .ct-counter-number-value {
 	color: #00D8FF;
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 55px;
 	font-weight: 400;
 }
@@ -435,7 +435,7 @@
 	color: #00D8FF;
 }
 .elementor-2392 .elementor-element.elementor-element-9d19ef0 .ct-counter .ct-counter-number .ct-counter-number-suffix, .elementor-2392 .elementor-element.elementor-element-9d19ef0 .ct-counter .ct-counter-number .ct-counter-number-prefix {
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 55px;
 	font-weight: 400;
 }
@@ -454,7 +454,7 @@
 }
 .elementor-2392 .elementor-element.elementor-element-d453660 .ct-counter .ct-counter-number-value {
 	color: #00D8FF;
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 55px;
 	font-weight: 400;
 }
@@ -465,7 +465,7 @@
 	color: #00D8FF;
 }
 .elementor-2392 .elementor-element.elementor-element-d453660 .ct-counter .ct-counter-number .ct-counter-number-suffix, .elementor-2392 .elementor-element.elementor-element-d453660 .ct-counter .ct-counter-number .ct-counter-number-prefix {
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 55px;
 	font-weight: 400;
 }
@@ -892,7 +892,7 @@
 .elementor-2405 .elementor-element.elementor-element-20c391b5 .ct-button-wrapper .btn {
 	padding: 0px 16px 0px 16px;
 	border-radius: 35px 35px 35px 35px;
-	font-family: "Roboto", Sans-serif;
+	font-family: 'Segoe UI', Sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 35px;
