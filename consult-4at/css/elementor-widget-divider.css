@@ -1,0 +1,237 @@
+:root {
+    --primary-color: #0f67f6;
+    --secondary-color: #191919;
+    --third-color: #08d9ff;
+    --primary-color-rgb: 15, 103, 246;
+    --secondary-color-rgb: 25, 25, 25;
+    --third-color-rgb: 8, 217, 255;
+    --link-color: #006cff;
+    --link-color-hover: #1227b8;
+    --link-color-active: #1227b8;
+    --gradient-color-from: #006cff;
+    --gradient-color-to: #1227b8;
+    --gradient-color-from-rgb: 0, 108, 255;
+    --gradient-color-to-rgb: 18, 39, 184;
+}
+
+@media screen and (max-width: 1199px) {}
+
+@media screen and (min-width: 1200px) {}
+
+.ct-service-carousel2 .item-readmore a,
+.ct-service-carousel2 .item--feature i {
+    background-color: rgba(113, 20, 239, 0.1);
+}
+
+.ct-loading-ito .item-4,
+.ct-video-button.style1:after,
+.ct-accordion1.style2 .ct-ac-title.active .ct-ac-title-text,
+.ct-accordion1.style2 .ct-ac-title:hover .ct-ac-title-text,
+.ct-spinner3 .double-bounce1,
+.ct-spinner3 .double-bounce2,
+.ct-video-button.style2:after,
+.ct-video-button.style2::before,
+.ct-service-carousel2 .item--icon,
+.ct-service-carousel2 .item-readmore a:hover,
+.ct-showcase.style1.no-soon .ct-btn-group .btn.active,
+.ct-process-grid1 .item--icon,
+.ct-slider-boxtext:hover,
+.revslider-initialised .case-arrow-slider2.tparrows:hover,
+.ct-support-button,
+.ct-pricing-single2:hover .pricing--price::before,
+.slick-dots-style5 .slick-dots li.slick-active button {
+    background-color: #7114ef;
+}
+
+.revslider-initialised .rs-layer cite,
+.ct-heading cite,
+.ct-service-carousel2 .item-readmore a,
+.ct-testimonial-carousel6 .item--icon,
+.ct-testimonial-carousel6 .item--position,
+.ct-slider-boxtext .item--icon i,
+.revslider-initialised .case-arrow-slider2.tparrows:before {
+    color: #7114ef;
+}
+
+.ct-loading-ito .item-2,
+.slick-dots-style3 .slick-dots li button::after,
+.ct-accordion1.style2 .ct-ac-title.active .ct-ac-title-text,
+.ct-accordion1.style2 .ct-ac-title:hover .ct-ac-title-text,
+.revslider-initialised .case-arrow-slider2.tparrows {
+    border-color: #7114ef;
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (max-width: 1199px) {}
+
+.ct-loading-ito .item-1,
+.ct-loading-ito .item-3,
+.ct-loading-ito .item-2::before,
+.ct-social-icon2 label::before {
+    background-color: #1475f7;
+}
+
+.text-gradient,
+.ct-tabs3 .ct-tabs-title .ct-tab-title::before,
+.ct-testimonial-carousel4 .item--position span,
+.ct-testimonial-carousel4 .item--image::before,
+.slick-arrows-1 .ct-slick-carousel .slick-arrow::after,
+.ct-slick-arrow-style2 .ct-slick-carousel .slick-arrow::after,
+.scroll-top,
+.ct-nav-carousel .nav-slick::after,
+.ct-blog-carousel-layout2 .item--title a:hover,
+.slick-dots-style3 .slick-dots li.slick-active button,
+.ct-video-button.style1:before,
+.ct-modal .ct-modal-close {
+    background-image: -webkit-gradient(linear, left top, right top, from(#7114ef), to(#1475f7));
+    background-image: -webkit-linear-gradient(to left, #7114ef, #1475f7);
+    background-image: -moz-linear-gradient(to left, #7114ef, #1475f7);
+    background-image: -ms-linear-gradient(to left, #7114ef, #1475f7);
+    background-image: -o-linear-gradient(to left, #7114ef, #1475f7);
+    background-image: linear-gradient(to left, #7114ef, #1475f7);
+}
+
+.ct-contact-form-layout1.style3 .wpcf7-submit,
+.ct-cta1 .item--button a,
+.ct-contact-form-layout1.style4 .wpcf7-submit {
+    background-image: -webkit-linear-gradient(90deg, #7114ef 0%, #1475f7 50%, #7114ef);
+    background-image: -moz-linear-gradient(90deg, #7114ef 0%, #1475f7 50%, #7114ef);
+    background-image: -ms-linear-gradient(90deg, #7114ef 0%, #1475f7 50%, #7114ef);
+    background-image: -o-linear-gradient(90deg, #7114ef 0%, #1475f7 50%, #7114ef);
+    background-image: linear-gradient(90deg, #7114ef 0%, #1475f7 50%, #7114ef);
+}
+/*! elementor - v3.7.8 - 02-10-2022 */
+.elementor-widget-divider {
+    --divider-border-style: none;
+    --divider-border-width: 1px;
+    --divider-color: #2c2c2c;
+    --divider-icon-size: 20px;
+    --divider-element-spacing: 10px;
+    --divider-pattern-height: 24px;
+    --divider-pattern-size: 20px;
+    --divider-pattern-url: none;
+    --divider-pattern-repeat: repeat-x
+}
+
+.elementor-widget-divider .elementor-divider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.elementor-widget-divider .elementor-divider__text {
+    font-size: 15px;
+    line-height: 1;
+    max-width: 95%
+}
+
+.elementor-widget-divider .elementor-divider__element {
+    margin: 0 var(--divider-element-spacing);
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.elementor-widget-divider .elementor-icon {
+    font-size: var(--divider-icon-size)
+}
+
+.elementor-widget-divider .elementor-divider-separator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    direction: ltr
+}
+
+.elementor-widget-divider--view-line_icon .elementor-divider-separator,
+.elementor-widget-divider--view-line_text .elementor-divider-separator {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,
+.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,
+.elementor-widget-divider--view-line_text .elementor-divider-separator:after,
+.elementor-widget-divider--view-line_text .elementor-divider-separator:before {
+    display: block;
+    content: "";
+    border-bottom: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+}
+
+.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 100;
+    flex-shrink: 100
+}
+
+.elementor-widget-divider--element-align-left .elementor-divider-separator:before {
+    content: none
+}
+
+.elementor-widget-divider--element-align-left .elementor-divider__element {
+    margin-left: 0
+}
+
+.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 100;
+    flex-shrink: 100
+}
+
+.elementor-widget-divider--element-align-right .elementor-divider-separator:after {
+    content: none
+}
+
+.elementor-widget-divider--element-align-right .elementor-divider__element {
+    margin-right: 0
+}
+
+.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator {
+    border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+}
+
+.elementor-widget-divider--separator-type-pattern {
+    --divider-border-style: none
+}
+
+.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,
+.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,
+.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,
+.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator {
+    width: 100%;
+    min-height: var(--divider-pattern-height);
+    -webkit-mask-size: var(--divider-pattern-size) 100%;
+    mask-size: var(--divider-pattern-size) 100%;
+    -webkit-mask-repeat: var(--divider-pattern-repeat);
+    mask-repeat: var(--divider-pattern-repeat);
+    background-color: var(--divider-color);
+    -webkit-mask-image: var(--divider-pattern-url);
+    mask-image: var(--divider-pattern-url)
+}
+
+.elementor-widget-divider--no-spacing {
+    --divider-pattern-size: auto
+}
+
+.elementor-widget-divider--bg-round {
+    --divider-pattern-repeat: round
+}
+
+.rtl .elementor-widget-divider .elementor-divider__text {
+    direction: rtl
+}
+
+.e-container>.elementor-widget-divider {
+    width: var(--container-widget-width, 100%);
+    --flex-grow: var(--container-widget-flex-grow, 0)
+}
