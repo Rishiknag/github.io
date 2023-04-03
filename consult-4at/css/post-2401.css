@@ -149,14 +149,14 @@
     align-items: center;
 }
 
-.elementor-2401 .elementor-element.elementor-element-59df7a2:not(.elementor-motion-effects-element-type-background),
+/* .elementor-2401 .elementor-element.elementor-element-59df7a2:not(.elementor-motion-effects-element-type-background),
 .elementor-2401 .elementor-element.elementor-element-59df7a2>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: #FFFFFF;
-}
+} */
 
 .elementor-2401 .elementor-element.elementor-element-59df7a2 {
     border-style: solid;
-    border-width: 2px 0px 0px 0px;
+    border-width: 0px 0px 0px 0px;
     border-color: #F1F3F5;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     padding: 0px 0px 0px 0px;

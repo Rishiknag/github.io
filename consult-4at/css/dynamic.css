@@ -1,3 +1,46 @@
+@import url(philosopher.css);
+html {
+    font-size: 1rem;
+    scrollbar-color: #080808 #a6a7a8;
+    scroll-behavior: smooth;
+}
+
+
+/*! Other Browser */
+
+html {
+    --scrollbarBG: #ECEEF2;
+    --thumbBG: #BEC6D0;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+.header-position {
+	margin-top: -113px
+}
+@media screen and (max-width: 991px) {
+	.header-position {
+		margin-top: -79px;
+        z-index: -1;
+	}
+}
+/* Scrolling End */
 body #ct-pagetitle {
     background-image: url('../img/bg-pagetitle.jpg');
 }
@@ -123,6 +166,7 @@ h6,
     background-image: -o-linear-gradient(to left, #3088bc, #c6ff3b);
     background-image: linear-gradient(to left, #3088bc, #c6ff3b);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7114EF', endColorStr='#1475F7');
+    background: transparent;
 }
 
 #ct_menu-909ae21.ct-nav-menu1.style2 .ct-main-menu>li>a::before,
