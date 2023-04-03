@@ -149,10 +149,10 @@
     align-items: center;
 }
 
-/* .elementor-2401 .elementor-element.elementor-element-59df7a2:not(.elementor-motion-effects-element-type-background),
+.elementor-2401 .elementor-element.elementor-element-59df7a2:not(.elementor-motion-effects-element-type-background),
 .elementor-2401 .elementor-element.elementor-element-59df7a2>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: #FFFFFF;
-} */
+}
 
 .elementor-2401 .elementor-element.elementor-element-59df7a2 {
     border-style: solid;
