@@ -432,3 +432,32 @@
         width: 40%;
     }
 }
+.elementor-347 .elementor-element.elementor-element-082fd20:not(.elementor-motion-effects-element-type-background),
+.elementor-347 .elementor-element.elementor-element-082fd20>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background-image: url("../img/bg-testimonial-section.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.elementor-347 .elementor-element.elementor-element-082fd20 {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 95px 0px 65px 0px;
+}
+
+.elementor-347 .elementor-element.elementor-element-082fd20>.elementor-background-overlay {
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.elementor-349 .elementor-element.elementor-element-30bff56c {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 65px 0px 85px 0px;
+}
+
+.elementor-349 .elementor-element.elementor-element-30bff56c:not(.elementor-motion-effects-element-type-background),
+.elementor-349 .elementor-element.elementor-element-30bff56c>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background-image: url(../img/bg-section-blog.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

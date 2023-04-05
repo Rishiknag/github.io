@@ -1,0 +1,24 @@
+<svg id="deepTech" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123.7" height="141.292" viewBox="0 0 123.7 141.292">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#206fb3"/>
+      <stop offset="0.06" stop-color="#1d77b4"/>
+      <stop offset="0.29" stop-color="#1592b7"/>
+      <stop offset="0.51" stop-color="#0fa5b9"/>
+      <stop offset="0.75" stop-color="#0bb0bb"/>
+      <stop offset="1" stop-color="#0ab4bb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" x2="1" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0" x2="1" xlink:href="#linear-gradient"/>
+  </defs>
+  <path id="Path_38218" data-name="Path 38218" d="M62.51,10.07V137.11l51.13-41.23V83.99" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  <path id="Path_38219" data-name="Path 38219" d="M49.91,113" transform="translate(-38.15 -29.36)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  <path id="Path_38220" data-name="Path 38220" d="M10.07,73.59V83.62l52.44,38.86" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  <path id="Path_38221" data-name="Path 38221" d="M36.29,37.01V56.45L62.51,76.16" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  <path id="Path_38222" data-name="Path 38222" d="M88.07,50.3l-.44,18.69L62.51,87.93" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  <circle id="Ellipse_1349" data-name="Ellipse 1349" cx="10.07" cy="10.07" r="10.07" transform="translate(52.44 0)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_1350" data-name="Ellipse 1350" cx="10.07" cy="10.07" r="10.07" transform="translate(103.56 63.52)" fill="url(#linear-gradient-2)"/>
+  <circle id="Ellipse_1351" data-name="Ellipse 1351" cx="10.07" cy="10.07" r="10.07" transform="translate(78 30.93)" fill="url(#linear-gradient-3)"/>
+  <circle id="Ellipse_1352" data-name="Ellipse 1352" cx="10.07" cy="10.07" r="10.07" transform="translate(26.22 17.57)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_1353" data-name="Ellipse 1353" cx="10.07" cy="10.07" r="10.07" transform="translate(0 53.45)" fill="url(#linear-gradient-3)"/>
+</svg>

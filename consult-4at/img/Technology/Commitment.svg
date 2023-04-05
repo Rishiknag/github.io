@@ -1,0 +1,31 @@
+<svg id="Commitment" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143" height="143" viewBox="0 0 143 143">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#206fb3"/>
+      <stop offset="0.06" stop-color="#1d77b4"/>
+      <stop offset="0.29" stop-color="#1592b7"/>
+      <stop offset="0.51" stop-color="#0fa5b9"/>
+      <stop offset="0.75" stop-color="#0bb0bb"/>
+      <stop offset="1" stop-color="#0ab4bb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.001" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+  </defs>
+  <circle id="Ellipse_1331" data-name="Ellipse 1331" cx="30" cy="30" r="30" transform="translate(41.5 41.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  <circle id="Ellipse_1332" data-name="Ellipse 1332" cx="19.44" cy="19.44" r="19.44" transform="translate(52.06 52.06)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  <circle id="Ellipse_1333" data-name="Ellipse 1333" cx="9.32" cy="9.32" r="9.32" transform="translate(62.18 1.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="3"/>
+  <circle id="Ellipse_1334" data-name="Ellipse 1334" cx="9.32" cy="9.32" r="9.32" transform="translate(62.18 122.86)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="3"/>
+  <circle id="Ellipse_1335" data-name="Ellipse 1335" cx="9.32" cy="9.32" r="9.32" transform="translate(105.09 19.27)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="3"/>
+  <circle id="Ellipse_1336" data-name="Ellipse 1336" cx="9.32" cy="9.32" r="9.32" transform="translate(19.27 105.09)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="3"/>
+  <circle id="Ellipse_1337" data-name="Ellipse 1337" cx="9.32" cy="9.32" r="9.32" transform="translate(122.86 62.18)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="3"/>
+  <circle id="Ellipse_1338" data-name="Ellipse 1338" cx="9.32" cy="9.32" r="9.32" transform="translate(1.5 62.18)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="3"/>
+  <circle id="Ellipse_1339" data-name="Ellipse 1339" cx="9.32" cy="9.32" r="9.32" transform="translate(105.09 105.09)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="3"/>
+  <circle id="Ellipse_1340" data-name="Ellipse 1340" cx="9.32" cy="9.32" r="9.32" transform="translate(19.27 19.27)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="3"/>
+  <circle id="Ellipse_1341" data-name="Ellipse 1341" cx="5.28" cy="5.28" r="5.28" transform="translate(66.22 25.54)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_1342" data-name="Ellipse 1342" cx="5.28" cy="5.28" r="5.28" transform="translate(66.22 106.9)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_1343" data-name="Ellipse 1343" cx="5.28" cy="5.28" r="5.28" transform="translate(94.99 37.45)" fill="url(#linear-gradient-3)"/>
+  <circle id="Ellipse_1344" data-name="Ellipse 1344" cx="5.28" cy="5.28" r="5.28" transform="translate(37.45 94.99)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_1345" data-name="Ellipse 1345" cx="5.28" cy="5.28" r="5.28" transform="translate(106.9 66.22)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_1346" data-name="Ellipse 1346" cx="5.28" cy="5.28" r="5.28" transform="translate(25.54 66.22)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_1347" data-name="Ellipse 1347" cx="5.28" cy="5.28" r="5.28" transform="translate(94.99 94.99)" fill="url(#linear-gradient-3)"/>
+  <circle id="Ellipse_1348" data-name="Ellipse 1348" cx="5.28" cy="5.28" r="5.28" transform="translate(37.45 37.45)" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149.855" height="155.31" viewBox="0 0 149.855 155.31">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#206fb3"/>
+      <stop offset="0.06" stop-color="#1d77b4"/>
+      <stop offset="0.29" stop-color="#1592b7"/>
+      <stop offset="0.51" stop-color="#0fa5b9"/>
+      <stop offset="0.75" stop-color="#0bb0bb"/>
+      <stop offset="1" stop-color="#0ab4bb"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0" y1="0.5" x2="1" y2="0.5" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Agile" transform="translate(-0.015)">
+    <path id="Path_38212" data-name="Path 38212" d="M95,169A67.88,67.88,0,0,1,95,33.24" transform="translate(-25.06 -22.34)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4.09"/>
+    <path id="Path_38213" data-name="Path 38213" d="M95,33.24h2.44" transform="translate(-25.06 -22.34)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4.09"/>
+    <path id="Path_38214" data-name="Path 38214" d="M102.26,33.62a67.88,67.88,0,0,1-2.44,135.19" transform="translate(-25.06 -22.34)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4.09" stroke-dasharray="4.84 4.84"/>
+    <path id="Path_38215" data-name="Path 38215" d="M97.42,168.94H94.98" transform="translate(-25.06 -22.34)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4.09"/>
+    <line id="Line_159" data-name="Line 159" x2="69.38" transform="translate(69.92 146.2)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4.09"/>
+    <line id="Line_160" data-name="Line 160" x2="69.38" transform="translate(0.54 146.2)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4.09" stroke-dasharray="4.89"/>
+    <circle id="Ellipse_1328" data-name="Ellipse 1328" cx="39.62" cy="39.62" r="39.62" transform="translate(30.3 37.19)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4.09" stroke-dasharray="4.15 4.15"/>
+    <circle id="Ellipse_1329" data-name="Ellipse 1329" cx="10.57" cy="10.57" r="10.57" transform="translate(128.73 134.17)" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_1330" data-name="Ellipse 1330" cx="11.08" cy="11.08" r="11.08" transform="translate(63.95 0)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

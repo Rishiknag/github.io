@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145.798" height="145.5" viewBox="0 0 145.798 145.5">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#206fb3"/>
+      <stop offset="0.06" stop-color="#1d77b4"/>
+      <stop offset="0.29" stop-color="#1592b7"/>
+      <stop offset="0.51" stop-color="#0fa5b9"/>
+      <stop offset="0.75" stop-color="#0bb0bb"/>
+      <stop offset="1" stop-color="#0ab4bb"/>
+    </linearGradient>
+  </defs>
+  <g id="Reports" transform="translate(0.004)">
+    <path id="Path_38223" data-name="Path 38223" d="M101,29.5" transform="translate(-27.35 -27.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_38224" data-name="Path 38224" d="M143.65,37V2h-35" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_38225" data-name="Path 38225" d="M171,64.5" transform="translate(-27.35 -27.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_38226" data-name="Path 38226" d="M101,74.52" transform="translate(-27.35 -27.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_38227" data-name="Path 38227" d="M2.15,108.5v35h35" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_38228" data-name="Path 38228" d="M118.83,112.57" transform="translate(-27.35 -27.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <rect id="Rectangle_17628" data-name="Rectangle 17628" width="21" height="21.28" transform="translate(22.65 101.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <rect id="Rectangle_17629" data-name="Rectangle 17629" width="21" height="39.1" transform="translate(62.65 83.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <rect id="Rectangle_17630" data-name="Rectangle 17630" width="21" height="65.48" transform="translate(102.65 57)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_38229" data-name="Path 38229" d="M48.64,112.3a9.449,9.449,0,0,0,1,.19" transform="translate(-27.35 -27.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_38230" data-name="Path 38230" d="M51.61,112.66c16.17.28,53.7-20.88,74.1-49.1" transform="translate(-27.35 -27.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4" stroke-dasharray="2 2"/>
+    <path id="Path_38231" data-name="Path 38231" d="M126.3,62.74l.57-.82" transform="translate(-27.35 -27.5)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <circle id="Ellipse_1354" data-name="Ellipse 1354" cx="10.01" cy="10.01" r="10.01" transform="translate(95.66 15.5)" fill="url(#linear-gradient)"/>
+    <path id="Path_38232" data-name="Path 38232" d="M108.79,143.43l35-.07-.07-35" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_38233" data-name="Path 38233" d="M37,2.07,2,2.14l.07,35" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+</svg>
