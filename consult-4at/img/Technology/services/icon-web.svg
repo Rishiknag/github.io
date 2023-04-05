@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>6CA127F3-CE71-4F26-8768-767D0A9A890D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web">
+            <g>
+                <rect id="Rectangle-10" fill="#D8D8D8" opacity="0" x="0" y="0" width="100" height="100"></rect>
+                <path d="M18.375,24 C17.6156085,24 17,24.612663 17,25.3684211 L17,74.6315789 C17,75.387337 17.6156085,76 18.375,76 L81.625,76 C82.3843915,76 83,75.387337 83,74.6315789 L83,25.3684211 C83,24.612663 82.3843915,24 81.625,24 L18.375,24 Z M17.8,22 L82.2,22 C83.7463973,22 85,23.2536027 85,24.8 L85,75.2 C85,76.7463973 83.7463973,78 82.2,78 L17.8,78 C16.2536027,78 15,76.7463973 15,75.2 L15,24.8 C15,23.2536027 16.2536027,22 17.8,22 Z" id="Rectangle-3" fill="#898989" fill-rule="nonzero"></path>
+                <path d="M31,51 L31,53.4615385 L32,53.4615385 L32,51 L31,51 Z M31,55.3076923 L31,57.7692308 L32,57.7692308 L32,55.3076923 L31,55.3076923 Z M31,59.6153846 L31,62.0769231 L32,62.0769231 L32,59.6153846 L31,59.6153846 Z M31,63.9230769 L31,66.3846154 L32,66.3846154 L32,63.9230769 L31,63.9230769 Z M31,68.2307692 L31,70.6923077 L32,70.6923077 L32,68.2307692 L31,68.2307692 Z M31,72.5384615 L31,75 L32,75 L32,72.5384615 L31,72.5384615 Z" id="Line" fill="#898989" fill-rule="nonzero"></path>
+                <rect id="Rectangle-3-Copy" stroke="#898989" stroke-width="1.39999998" x="15.7" y="41.7" width="68.6" height="1"></rect>
+                <rect id="Rectangle-3-Copy-3" stroke="#898989" stroke-width="1.39999998" x="15.7" y="48.7" width="68.6" height="1"></rect>
+                <circle id="Oval-57-Copy-5-Copy" fill="#898989" cx="23.5" cy="33.5" r="2.5"></circle>
+                <circle id="Oval-57-Copy-5-Copy-2" fill="#898989" cx="31.5" cy="33.5" r="2.5"></circle>
+                <circle id="Oval-57-Copy-5-Copy-3" fill="#898989" cx="39.5" cy="33.5" r="2.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
