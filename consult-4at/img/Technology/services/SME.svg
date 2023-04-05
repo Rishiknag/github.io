@@ -1,0 +1,17 @@
+<svg id="SME" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="165.84" viewBox="0 0 146 165.84">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#206fb3"/>
+      <stop offset="0.06" stop-color="#1d77b4"/>
+      <stop offset="0.29" stop-color="#1592b7"/>
+      <stop offset="0.51" stop-color="#0fa5b9"/>
+      <stop offset="0.75" stop-color="#0bb0bb"/>
+      <stop offset="1" stop-color="#0ab4bb"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1361" data-name="Ellipse 1361" cx="71" cy="71" r="71" transform="translate(2 11.92)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+  <circle id="Ellipse_1362" data-name="Ellipse 1362" cx="11.92" cy="11.92" r="11.92" transform="translate(61.08 0)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_1363" data-name="Ellipse 1363" cx="11.92" cy="11.92" r="11.92" transform="translate(61.08 142)" fill="#666"/>
+  <path id="Path_38253" data-name="Path 38253" d="M103.73,52.19,61.39,68.02,87.9,94.53Z" fill="none" stroke="#707070" stroke-miterlimit="10" stroke-width="4"/>
+  <path id="Path_38254" data-name="Path 38254" d="M42.27,113.66,84.61,97.82,58.1,71.31Z" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
+</svg>
