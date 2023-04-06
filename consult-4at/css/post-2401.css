@@ -193,7 +193,7 @@
 .elementor-2401 .elementor-element.elementor-element-909ae21 .ct-nav-menu .ct-main-menu li .sub-menu li.current-menu-item>a,
 .elementor-2401 .elementor-element.elementor-element-909ae21 .ct-nav-menu .ct-main-menu li .sub-menu li.current_page_ancestor>a,
 .elementor-2401 .elementor-element.elementor-element-909ae21 .ct-nav-menu .ct-main-menu li .sub-menu li.current-menu-ancestor>a {
-    color: #1475F7;
+    color: rgb(11,105,149);
 }
 
 .elementor-2401 .elementor-element.elementor-element-909ae21 .ct-nav-menu .ct-main-menu li .sub-menu {
@@ -243,6 +243,7 @@
     font-size: 15px;
     line-height: 58px;
     box-shadow: 0px 6px 6px 0px rgba(54.99999999999999, 79.99999999999996, 244, 0.3);
+    box-shadow: 0px 6px 6px 0px rgba(34, 155, 207, 0.3);
 }
 
 .elementor-2401 .elementor-element.elementor-element-b70dbce .ct-button-wrapper .btn:not(.btn-ctext),

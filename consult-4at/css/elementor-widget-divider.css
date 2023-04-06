@@ -8,8 +8,8 @@
     --link-color: #006cff;
     --link-color-hover: #1227b8;
     --link-color-active: #1227b8;
-    --gradient-color-from: #006cff;
-    --gradient-color-to: #1227b8;
+    --gradient-color-from: rgb(11,105,149);
+    --gradient-color-to: rgb(34,155,207);
     --gradient-color-from-rgb: 0, 108, 255;
     --gradient-color-to-rgb: 18, 39, 184;
 }

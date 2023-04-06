@@ -208,19 +208,31 @@ RS_MODULES.modules["revslider21"] = {
 		});
 	}
 } // End of RevInitScript
-NavbarSticky = function() {
-	var t = $(".navbar-sticky"),
-		o = 0,
-		e = !1;
-	t.length && (o = t.offset().top, $(window).on({
-		scroll: function() {
-			e = !0, setInterval(function() {
-				e && (e = !1, function(t) {
-					var e = $(window).scrollTop(),
-						a = t.outerHeight();
-					o + 200 < e ? (t.addClass("ct-header-elementor-sticky").removeClass("ct-header-elementor-main"), $("body").css("padding-top", a + "px")) : (t.removeClass("ct-header-elementor-sticky").addClass("ct-header-elementor-main"), $("body").css("padding-top", "0"))
-				}(t))
-			}, 250)
+
+/*---------------------------------------------------------------------
+	Sticky Header Animation & Height
+----------------------------------------------------------------------- */
+function headerHeight() {
+	var height = $(".navbar-sticky").height();
+	$('.iq-height').css('height', height + 'px');
+}
+$(function() {
+	var header = $(".navbar-sticky"),
+		yOffset = 0,
+		triggerPoint = 200;
+
+	//headerHeight();
+
+	$(window).resize(headerHeight);
+	$(window).on('scroll', function() {
+
+		yOffset = $(window).scrollTop();
+
+		if (yOffset >= triggerPoint) {
+			header.addClass("ct-header-elementor-sticky animated slideInDown").removeClass("ct-header-elementor-main");
+		} else {
+			header.removeClass("ct-header-elementor-sticky animated slideInDown").addClass("ct-header-elementor-main animated slideInUp");
 		}
-	}))
-}();
+
+	});
+});
