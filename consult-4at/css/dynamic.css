@@ -1722,3 +1722,53 @@ h6, .h6  {
         width: 100%;
     }
 }
+.liveChat {
+    position: fixed;
+    bottom: 99px;
+    right: 5px;
+    z-index: 1000;
+}
+.btn-icon.btn-lg {
+    height: calc(1.4rem + 1.5em + 2px);
+    width: calc(1.4rem + 1.5em + 2px);
+}
+.btn-icon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: calc(1rem + 1.5em + 2px);
+    width: calc(1rem + 1.5em + 2px);
+    padding: 0;
+}
+.btn-rounded {
+    border-radius: 30px;
+}
+.ct-logo a {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.offcanvas.offcanvas-end {
+    top: auto;
+    bottom: 22px;
+    right: 5px;
+    height: 75vh;
+    -webkit-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    -khtml-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    -moz-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    -ms-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    -o-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+}
+.liveChat:hover span {
+    -o-animation: toTopFromBottom .6s forwards;
+    -ms-animation: toTopFromBottom .6s forwards;
+    -webkit-animation: toTopFromBottom .6s forwards;
+    animation: toTopFromBottom .6s forwards
+}
