@@ -180,6 +180,10 @@ body::-webkit-scrollbar-thumb {
 }
 .js-menu li a {
     margin-left: 10px;
+    color: #869fb2 !important;
+}
+.js-menu li a:hover {
+    color: #fff !important
 }
 .js-menu li::marker {
     content: "\f068";
