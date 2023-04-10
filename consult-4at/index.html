@@ -1127,17 +1127,111 @@
             </div>
         </div>
     </div><!-- #page -->
-
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="css/liveChat.css">
     <!-- Theme Settings -->
-    <div class="offcanvas offcanvas-end border-0" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="live-chat">
-        <div class="d-flex align-items-center bg-gradient p-3 offcanvas-header">
+    <div class="offcanvas offcanvas-end border-0" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="live-chat">
+        <div class="d-flex align-items-center offcanvas-header h-header-gradient">
             <h6 class="m-0 me-2 text-white">Live chat Support</h6>
             <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body p-0">
-            <div class="h-100 overflow-y-scroll">
-                
+        <div class="offcanvas-body p-0 faq-body">
+            <div class="dummy-bar gradient"></div>
+            <div class="card-layout scroll-section">
+                <div class="channel-section fadeInUp faster h-categories">
+                    <div class="channel-title">
+                        <div class="list-sub-title" role="heading" aria-level="1">
+                            Message Us
+                        </div>
+                    </div>
+                    <ul class="channel-list">
+                        <li>
+                            <div class="channel wow fadeInLeft enabled-agent-typing-indicator ember-view" data-wow-delay=".2s">
+                                <a href="#" class="ember-view channel-link">
+                                    <div class="h-category-item">
+                                        <div class="h-category-icon">
+                                            <img class="img-circle avatar-image"
+                                                src="img/Technology/solutions/Helpdesk.svg" alt="Help desk" />
+                                        </div>
+                                        <div class="channel-names">
+                                            <div class="channel-content">
+                                                <div class="h-category-detail">
+                                                    <h2 class="channel-name">
+                                                        Help
+                                                    </h2>
+                                                    <div class="welcome-text ">
+                                                        <div class="message-text">
+                                                            <div class="last-msg-preview">
+                                                                <div class="h-comment">
+                                                                    <div class="h-message-text ">Hello there!&nbsp;👋 Need
+                                                                        help? Reach out to us right here, and we'll get back
+                                                                        to you as soon as we can!&nbsp;</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </a></div>
+                            <div class="border-bottom"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="faq-list wow fadeInUp" data-wow-delay=".4s">
+                    <div class="faq-header">
+                        <div class="title-header">
+                            <div class="list-sub-title" role="heading" aria-level="1">
+                                FAQs
+                            </div>
+                        </div>
+                        <div class="search-category" role="button" aria-label="Search Frequently Asked Questions">
+                            <i class="fal fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="faq-categories">
+                        <ul class="categories-list">
+                            <li>
+                                <a href="#">
+                                    <div class="category-item">
+                                        <div class="category-icon">
+                                            <img src="img/Technology/solutions/Fee_Management.svg"
+                                                class="img-circle avatar-image" alt="Fee_Management">
+                                        </div>
+                                        <div class="category-name">
+                                            <div class="faq-title" role="heading" aria-level="2">
+                                                Pricing Plans
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="border-bottom"></div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="category-item">
+                                        <div class="category-icon">
+                                            <img src="img/Technology/solutions/Discussions.svg"
+                                                class="img-circle avatar-image" alt="Category icon">
+                                        </div>
+                                        <div class="category-name">
+                                            <div class="faq-title" role="heading" aria-level="2">
+                                                Discussions
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="border-bottom"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="offcanvas-footer border-top p-1 text-center">
@@ -1148,7 +1242,7 @@
                             <textarea class="form-control" placeholder="Leave a comment here" id="commentstxt"></textarea>
                             <label for="commentstxt">Comments</label>
                         </div>
-                        <span class="input-group-text"> <i class="fal fa-paper-plane"></i> </span>
+                        <button class="input-group-text"><i class="fal fa-paper-plane text-white"></i></button>
                     </div>
                 </div>
             </div>
