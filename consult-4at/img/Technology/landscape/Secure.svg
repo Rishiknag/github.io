@@ -1,16 +1,1 @@
-<svg id="Secure" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="146" viewBox="0 0 146 146">
-  <defs>
-    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#206fb3"/>
-      <stop offset="0.06" stop-color="#1d77b4"/>
-      <stop offset="0.29" stop-color="#1592b7"/>
-      <stop offset="0.51" stop-color="#0fa5b9"/>
-      <stop offset="0.75" stop-color="#0bb0bb"/>
-      <stop offset="1" stop-color="#0ab4bb"/>
-    </linearGradient>
-  </defs>
-  <circle id="Ellipse_1360" data-name="Ellipse 1360" cx="71" cy="71" r="71" transform="translate(2 2)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4" stroke-dasharray="1.96 1.96"/>
-  <path id="Path_38250" data-name="Path 38250" d="M136.42,113a36.94,36.94,0,1,1-18-31.73A36.94,36.94,0,0,1,136.42,113Z" transform="translate(-27 -27)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
-  <path id="Path_38251" data-name="Path 38251" d="M118.43,68.11v13.2a37,37,0,0,0-36.86-.61V68.11a18.43,18.43,0,0,1,36.86,0Z" transform="translate(-27 -27)" fill="none" stroke="#666" stroke-miterlimit="10" stroke-width="4"/>
-  <path id="Path_38252" data-name="Path 38252" d="M111.77,105A11.77,11.77,0,1,0,98,116.59V134h4V116.59A11.78,11.78,0,0,0,111.77,105ZM100,112.77a7.77,7.77,0,1,1,7.77-7.77,7.77,7.77,0,0,1-7.77,7.77Z" transform="translate(-27 -27)" fill="url(#linear-gradient)"/>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="146" viewBox="0 0 146 146"><defs><style>.cls-1,.cls-2{fill:none;stroke:#666;stroke-miterlimit:10;stroke-width:4px;}.cls-1{stroke-dasharray:1.96 1.96;}.cls-3{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="88.23" y1="113.61" x2="111.77" y2="113.61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#206fb3"/><stop offset="0.06" stop-color="#1d77b4"/><stop offset="0.29" stop-color="#1592b7"/><stop offset="0.51" stop-color="#0fa5b9"/><stop offset="0.75" stop-color="#0bb0bb"/><stop offset="1" stop-color="#0ab4bb"/></linearGradient></defs><title>Secure</title><circle class="cls-1" cx="73" cy="73" r="71"/><path class="cls-2" d="M136.42,113a36.94,36.94,0,1,1-18-31.73A37,37,0,0,1,136.42,113Z" transform="translate(-27 -27)"/><path class="cls-2" d="M118.43,68.11v13.2a37,37,0,0,0-36.86-.61V68.11a18.43,18.43,0,0,1,36.86,0Z" transform="translate(-27 -27)"/><path class="cls-3" d="M111.77,105A11.77,11.77,0,1,0,98,116.59V134h4V116.59A11.78,11.78,0,0,0,111.77,105ZM100,112.77a7.77,7.77,0,1,1,7.77-7.77A7.78,7.78,0,0,1,100,112.77Z" transform="translate(-27 -27)"/></svg>
