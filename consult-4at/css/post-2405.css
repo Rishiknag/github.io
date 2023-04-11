@@ -66,7 +66,7 @@
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding: 65px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
 }
 
 .elementor-2405 .elementor-element.elementor-element-6bc1161e>.elementor-background-overlay {
@@ -291,7 +291,7 @@
 
 .elementor-2405 .elementor-element.elementor-element-78618f09 {
     --divider-border-style: solid;
-    --divider-color: #0F0F46;
+    --divider-color: #267fde;
     --divider-border-width: 1px;
 }
 
@@ -306,7 +306,7 @@
 
 .elementor-2405 .elementor-element.elementor-element-78618f09>.elementor-widget-container {
     margin: 0px 15px 0px 15px;
-    padding: 58px 0px 0px 0px;
+    padding: 8px 0px 0px 0px;
 }
 
 .elementor-2405 .elementor-element.elementor-element-6b14a97f .ct-text-editor {
