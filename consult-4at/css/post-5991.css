@@ -214,7 +214,7 @@
 .elementor-5991 .elementor-element.elementor-element-4df5ddc:not(.elementor-motion-effects-element-type-background),
 .elementor-5991 .elementor-element.elementor-element-4df5ddc>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: #FFFFFF;
-    z-index: 1030;
+    z-index: 666;
 }
 
 .elementor-5991 .elementor-element.elementor-element-4df5ddc,
@@ -834,7 +834,7 @@ body.rtl .elementor-5991 .elementor-element.elementor-element-6a08cf8 {
     }
 
     .elementor-5991 .elementor-element.elementor-element-a9a38e1 .ct-heading .item--title {
-        font-size: 32px;
+        font-size: 1.25rem;
         line-height: 38px;
     }
 
@@ -907,6 +907,18 @@ body.rtl .elementor-5991 .elementor-element.elementor-element-6a08cf8 {
 
     .elementor-5991 .elementor-element.elementor-element-1367dca>.elementor-widget-container {
         padding: 0% 0% 0% 0%;
+    }
+    .ct-fancy-box-layout1 .item--icon {
+        margin-right: 0px;
+    }
+    .ct-fancy-box-layout1 .item--icon i {
+        font-size: 35px;
+    }
+    .ct-fancy-box-layout1 .item--title {
+        font-size: 16px;
+    }
+    .ct-fancy-box-layout1 .item--description {
+        font-size: 0.875rem;
     }
 }
 

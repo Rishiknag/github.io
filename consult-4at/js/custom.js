@@ -133,8 +133,8 @@ $(function() {
     };
 
     // Make sure you run this code under Elementor.
-    $( window ).on( 'elementor/frontend/init', function() {
-        elementorFrontend.hooks.addAction( 'frontend/element_ready/ct_tabs.default', WidgetCTTabsHandler );
-        elementorFrontend.hooks.addAction( 'frontend/element_ready/ct_pricing.default', WidgetCTTabsHandler );
-    } );
+    // $( window ).on( 'elementor/frontend/init', function() {
+    //     elementorFrontend.hooks.addAction( 'frontend/element_ready/ct_tabs.default', WidgetCTTabsHandler );
+    //     elementorFrontend.hooks.addAction( 'frontend/element_ready/ct_pricing.default', WidgetCTTabsHandler );
+    // } );
 } )( jQuery );
