@@ -109,14 +109,15 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     padding: 0 0 0 40px;
     margin: 0 0 14px 0;
-    display: inline-flex;
+    /* display: inline-flex; */
 }
 .list-style4 li:before {
-    content: "\f00c";
+    content: "\f5ad";
+    content: "\e016";
     font-family: "Font Awesome 5 Pro";
-    color: #ffffff;
-    font-size: 12px;
-    background: #198754;
+    color: #087096;
+    font-size: 1.125rem;
+    /* background: #087096; */
     margin-right: 12px;
     border-radius: 30px;
     padding: 6px;
@@ -124,6 +125,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     top: 2px;
     line-height: 12px;
+    font-weight: 500;
 }
 .item--meta h3 {
     font-size: 2.25rem !important;
