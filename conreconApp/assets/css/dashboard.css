@@ -170,6 +170,13 @@
     grid-template-columns: repeat(auto-fill,minmax(175px,1fr));
     grid-gap: 10px;
 }
+@media (min-width: 1300px) {
+    .services_flex {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(208px,1fr));
+        grid-gap: 35px;
+    }
+}
 .services_iconList {
     display: flex;
     flex-direction: column;
@@ -184,4 +191,7 @@
     color: #000;
     cursor: pointer;
     font-weight: 600;
+}
+.text-violet {
+    color: var(--vz-primary);
 }
