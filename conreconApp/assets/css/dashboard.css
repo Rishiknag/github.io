@@ -1,0 +1,187 @@
+:root {
+    --gradient-color-from: rgb(11,105,149);
+    --gradient-color-to: rgb(34,155,207);
+    --gradient-color-from-rgb: 0, 108, 255;
+    --gradient-color-to-rgb: 16, 39, 164;
+}
+.elementor {
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual
+}
+
+.elementor *,.elementor :after,.elementor :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.elementor a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none
+}
+.elementor-widget-container {
+    -webkit-transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
+    transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
+    -o-transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-box-shadow .3s;
+}
+.tab-box-layout .item--inner {
+    padding: 15px 10px;
+}
+.ct-fancy-box-layout5 .item--inner {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 5px;
+    -webkit-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    -khtml-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    -moz-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    -ms-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    -o-box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    box-shadow: 0 0 74px rgba(3, 0, 44, .24);
+    position: relative;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+.tab-box-layout .item--icon img {
+    width: 50px;
+    height: 50px;
+}
+.ct-fancy-box-layout5 .item--icon img {
+    max-height: 60px;
+}
+.elementor img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ct-fancy-box-layout5 .item--icon {
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: 25px;
+    position: relative;
+}
+.tab-box-layout .item--icon {
+    margin-bottom: 10px;
+}
+.ct-fancy-box-layout5 .item--title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #101130;
+    -webkit-transition: .3s cubic-bezier(.24, .74, .58, 1);
+    -khtml-transition: .3s cubic-bezier(.24, .74, .58, 1);
+    -moz-transition: .3s cubic-bezier(.24, .74, .58, 1);
+    -ms-transition: .3s cubic-bezier(.24, .74, .58, 1);
+    -o-transition: .3s cubic-bezier(.24, .74, .58, 1);
+    transition: .3s cubic-bezier(.24, .74, .58, 1);
+}
+.tab-box-layout .item--title {
+    font-size: calc(14 * 1px + (16 - 16) * ((100vw - 320px) / 2240));
+}
+.ct-fancy-box-layout5 .item--inner:hover {
+    -webkit-box-shadow: none;
+    -khtml-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+.ct-fancy-box-layout5 .item--inner:hover .item--icon {
+    background: white;
+    border-radius: 50%;
+}
+.ct-fancy-box-layout5 .item--inner:hover .item--title, .ct-fancy-box-layout5 .item--inner:hover .item--description {
+    color: #fff;
+}
+.ct-fancy-box-layout5 .item--inner:hover .item--overlay {
+    transform-origin: left center;
+    -webkit-transform-origin: left center;
+    -webkit-transform: scale(1, 1);
+    -khtml-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+.ct-fancy-box-layout5 .item--inner .item--overlay:before,
+.ct-fancy-box-layout5 .item--inner .item--overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.ct-fancy-box-layout5 .item--inner .item--overlay:before {
+    background-color: var(--gradient-color-from);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-color-from)), to(var(--gradient-color-to)));
+    background-image: -webkit-linear-gradient(to right, var(--gradient-color-from), var(--gradient-color-to));
+    background-image: -moz-linear-gradient(to right, var(--gradient-color-from), var(--gradient-color-to));
+    background-image: -ms-linear-gradient(to right, var(--gradient-color-from), var(--gradient-color-to));
+    background-image: -o-linear-gradient(to right, var(--gradient-color-from), var(--gradient-color-to));
+    background-image: linear-gradient(to right, var(--gradient-color-from), var(--gradient-color-to));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='var(--gradient-color-from)', endColorStr='var(--gradient-color-to)', gradientType='1')
+}
+
+.ct-fancy-box-layout5 .item--inner .item--overlay:after {
+    background-image: url(../images/overlay-shape1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0
+}
+.ct-fancy-box-layout5 .item--inner .item--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: transform .3s cubic-bezier(.37, .31, .2, .85);
+    -khtml-transition: transform .3s cubic-bezier(.37, .31, .2, .85);
+    -moz-transition: transform .3s cubic-bezier(.37, .31, .2, .85);
+    -ms-transition: transform .3s cubic-bezier(.37, .31, .2, .85);
+    -o-transition: transform .3s cubic-bezier(.37, .31, .2, .85);
+    transition: transform .3s cubic-bezier(.37, .31, .2, .85);
+    transform-origin: right center;
+    -webkit-transform-origin: right center;
+    -webkit-transform: scale(0, 1);
+    -khtml-transform: scale(0, 1);
+    -moz-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    -o-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+.h-125 {
+    min-height: 124px;
+}
+.h-168 {
+    min-height: 168px;
+}
+.services_icon img {
+    width: 80px;
+}
+.services_flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(175px,1fr));
+    grid-gap: 10px;
+}
+.services_iconList {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    /* width: 120px; */
+    justify-content: flex-start;
+}
+.services_label {
+    font-display: swap;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+}
