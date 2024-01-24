@@ -1,0 +1,6 @@
+.login-page--body {
+    background: linear-gradient(180deg, rgba(70, 0, 131, 0.94) 0%, rgba(0, 143, 201, 0.94) 52.6%, rgba(149, 208, 197, 0.94) 100%);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

@@ -14,7 +14,8 @@
   --vz-footer-bg: rgb(41, 170, 225);
   --vz-topnav-item-color-active: #6691e7;
   --vz-sw-bg: #E4F1F5;
-  --vz-primary: #639;
+  --vz-primary1: #639;
+  --vz-primary: #2e359d;
 }
 [data-bs-theme=dark] {
   --bs-heading-color: #eaeff4 !important;
@@ -816,7 +817,7 @@ html[data-boxed-layout=boxed] .container-xxl {
   left: 0;
   right: 0;
   height: 100%;
-  background: transparent linear-gradient(164deg, var(--vz-headerNew-bg) 0%, var(--vz-headerNew-bg) 31%, var(--vz-footer-bg) 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(164deg, var(--vz-headerNew-bg) 0%, var(--vz-headerNew-bg) 31%, var(--vz-primary1) 100%) 0% 0% no-repeat padding-box;
 }
 
 .left-sidebar .sidebartoggler {
@@ -8341,9 +8342,9 @@ a.jp-playlist-current:before {
 }
 
 /* Delete Modal*/
-body {
-  /* On Drag Task */
-}
+/* body {
+  On Drag Task
+} */
 
 body .task-list-section {
   display: flex;
