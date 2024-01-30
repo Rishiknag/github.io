@@ -33,8 +33,8 @@
                 <!-- ---------------------------------- -->
                 <div class="brand-logo d-flex align-items-center justify-content-between">
                     <a href="dashboard.html" class="text-nowrap logo-img">
-                        <img src="assets/images/svgs/khanjar-white.svg" class="dark-logo" alt="Logo-Dark" width="42" />
-                        <img src="assets/images/svgs/khanjar-white.svg" class="light-logo" alt="Logo-light" width="42" />
+                        <img src="assets/images/logo-white.svg" class="dark-logo" alt="Logo-Dark" width="69" />
+                        <img src="assets/images/logo-white.svg" class="light-logo" alt="Logo-light" width="69" />
                     </a>
                     <a href="javascript:void(0)"
                         class="sidebartoggler ms-auto text-decoration-none fs-5 d-block d-xl-none">
@@ -204,12 +204,13 @@
                                     <li class="nav-item dropdown header-item topbar-user">
                                         <a class="nav-link pe-0" href="javascript:void(0)" id="drop1"
                                             data-bs-toggle="dropdown" aria-expanded="false">
-                                            <div class="d-flex align-items-center">
-                                                <div class="user-profile-img">
+                                            <div class="">
+                                                <div class="user-profile-img d-flex align-items-center">
                                                     <span class="text-start me-xl-2">
                                                         <span class="d-none d-xl-inline-block me-1 fw-medium user-name-text">Mohammed</span>
                                                     </span>
-                                                    <img src="assets/images/avatar.svg" class="rounded-circle" width="35" height="35" alt="" />
+                                                    <!-- <img src="assets/images/avatar.svg" class="rounded-circle" width="35" height="35" alt="" /> -->
+                                                    <i class="fal fa-user-circle"></i>
                                                 </div>
                                             </div>
                                         </a>
@@ -247,7 +248,7 @@
                                                     
                                                 </div>
                                                 <div class="d-grid py-4 px-7 pt-8">
-                                                    <a href="index.html" class="btn btn-outline-primary">Log Out</a>
+                                                    <a href="index.html" class="btn btn-moi">Log Out</a>
                                                 </div>
                                             </div>
 
@@ -276,10 +277,10 @@
                                     <h2 class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                             aria-expanded="true" aria-controls="collapseOne">
-                                            <div class="d-flex justify-content-between w-100">
-                                                <div><strong class="text-dark">Login PKID ID <span>:&nbsp;</span></strong><span>123</span></div>
-                                                <div><strong class="text-muted">Mediation and Reconciliation Personal Data</strong></div>
-                                                <div class="me-3"><strong class="text-dark">Login Name <span>:&nbsp;</span></strong><span>text</span></div>
+                                            <div class="d-flex justify-content-between w-100 text-black">
+                                                <div><strong class="">Login PKID ID <span>:&nbsp;</span></strong><span>123</span></div>
+                                                <div><strong class="">Mediation and Reconciliation Personal Data</strong></div>
+                                                <div class="me-3"><strong class="">Login Name <span>:&nbsp;</span></strong><span>text</span></div>
                                             </div>
                                         </button>
                                     </h2>
@@ -291,24 +292,26 @@
                                                     <div class="col-sm-6 col-xl-4 mb-2">
                                                         <div class="input-group">
                                                             <div class="form-floating">
-                                                              <input type="text" class="form-control" id="dateId" placeholder="dd-MMM-yyyy" value="22-01-2024" readonly>
-                                                              <label for="dateId">Date</label>
+                                                                <input type="text" class="form-control" id="dateId" placeholder="dd-MMM-yyyy" value="22-01-2024" readonly>
+                                                                <label for="dateId">Date</label>
                                                             </div>
-                                                            <span class="input-group-text"><i class="fal fa-calendar fa-xl"></i></span>
+                                                            <span class="input-group-text">
+                                                                <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 col-xl-4 mb-2">
                                                         <div class="input-group">
                                                             <div class="form-floating">
-                                                              <select name="" id="requestType" class="form-select">
-                                                                <option value="">Please select</option>
-                                                                <option value="1">Commercial</option>
-                                                                <option value="2">Residency</option>
-                                                                <option value="3">Commercial Residency</option>
-                                                              </select>
-                                                              <label for="requestType">Request Type</label>
+                                                                <select name="" id="requestType" class="form-select">
+                                                                    <option value="">Please select</option>
+                                                                    <option value="1">Commercial</option>
+                                                                    <option value="2">Residency</option>
+                                                                    <option value="3">Commercial Residency</option>
+                                                                </select>
+                                                                <label for="requestType">Request Type</label>
                                                             </div>
-                                                            <span class="input-group-text"><i class="fal fa-building fa-xl"></i></span>
+                                                            <span class="input-group-text">
+                                                                <img src="assets/images/icon/requestType.svg" alt="requestType" class="img-fluid img-icon"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6 col-xl-4 mb-2">
@@ -323,7 +326,8 @@
                                                               </select>
                                                               <label for="applicantType">Applicant Type</label>
                                                             </div>
-                                                            <span class="input-group-text"><i class="fal fa-building-memo fa-xl"></i></span>
+                                                            <span class="input-group-text">
+                                                                <img src="assets/images/icon/applicantType.svg" alt="applicantType" class="img-fluid img-icon"></span>
                                                         </div>
                                                     </div>
                                                 </div> <!-- /.row -->
@@ -342,28 +346,32 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#himSelf">
                                             <span class="num">
-                                                <i class="fa-light fa-images-user me-2"></i>
+                                                <!-- <i class="fa-light fa-images-user me-2"></i> -->
+                                                <img src="assets/images/icon/himSelf.svg" alt="himSelf" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Himself</span></span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#POA">
                                             <span class="num">
-                                                <i class="ti ti-transform me-2"></i>
+                                                <!-- <i class="ti ti-transform me-2"></i> -->
+                                                <img src="assets/images/icon/POA.svg" alt="POA" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Power Of Attorney(POA)</span></span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#step-3">
                                             <span class="num">
-                                                <i class="fa-light fa-people-roof me-2"></i>
+                                                <!-- <i class="fa-light fa-people-roof me-2"></i> -->
+                                                <img src="assets/images/icon/guardian.svg" alt="Guardian" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Guardian</span></span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#step-4">
                                             <span class="num">
-                                                <i class="fa-light fa-fort me-2"></i>
+                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
+                                                <img src="assets/images/icon/company.svg" alt="Company" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Company</span></span>
                                         </a>
                                     </li>
@@ -373,7 +381,7 @@
                                         <div id="himSelf" class="tab-pane" role="tabpanel" aria-labelledby="himSelf">
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
-                                                    <span class="ribbon-three ribbon-three-primary">
+                                                    <span class="ribbon-three ribbon-three-moi">
                                                         <span>Mediation and Reconciliation Personal Data</span></span>
  
                                                     <div class="row g-3 my-4">
@@ -383,7 +391,8 @@
                                                                     <input type="text" class="form-control" id="requestNo" placeholder="Request No" readonly />
                                                                     <label for="requestNo">Request No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-hashtag fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="hash" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -395,7 +404,8 @@
                                                                     <input type="number" class="form-control" id="civilID" placeholder="Civil ID">
                                                                     <label for="civilID">Civil ID</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -404,7 +414,8 @@
                                                                     <input type="date" class="form-control" id="civilIDExpiryDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="civilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -413,7 +424,8 @@
                                                                     <input type="number" class="form-control" id="passportNumber" placeholder="Passport Number">
                                                                     <label for="passportNumber">Passport Number</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-passport fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/passport_black.svg" alt="Passport" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -422,7 +434,8 @@
                                                                     <input type="date" class="form-control" id="PassportExpiryDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="PassportExpiryDate">Passport Expiry Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -431,14 +444,14 @@
                                                                     <input type="text" class="form-control" id="applicantName" placeholder="Applicant name">
                                                                     <label for="applicantName">Applicant name</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="Applicant name" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating singleSelect">
-                                                                    <select class="form-select multiSelect" id="nationality"
-                                                                        aria-label="Floating label">
+                                                                    <select class="form-select multiSelect" id="nationality" aria-label="Floating label">
                                                                         <option value="">Please select</option>
                                                                         <option value="afghan">Afghan</option>
                                                                         <option value="albanian">Albanian</option>
@@ -645,22 +658,22 @@
                                                                     </select>
                                                                     <label for="nationality">Nationality</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-flag fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/nationality.svg" alt="nationality" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <select class="form-select" id="gender"
-                                                                        aria-label="Floating label">
+                                                                    <select class="form-select" id="gender" aria-label="Floating label">
                                                                         <option value="">Please select</option>
                                                                         <option value="1">Male</option>
                                                                         <option value="2">Female</option>
                                                                     </select>
                                                                     <label for="gender">Gender</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i
-                                                                        class="fa-light fa-venus-mars fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/gender.svg" alt="gender" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -682,7 +695,8 @@
                                                                     </select>
                                                                     <label for="governorateID">Governorate</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="governorate" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -693,7 +707,8 @@
                                                                     </select>
                                                                     <label for="incidentLocation">Willayat</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-location-crosshairs fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="Willayat" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -702,8 +717,8 @@
                                                                     <input type="number" class="form-control" id="GsmNo1" placeholder="Gsm No 1" maxlength="8">
                                                                     <label for="GsmNo1">Gsm No 1</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i
-                                                                        class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -712,7 +727,8 @@
                                                                     <input type="number" class="form-control" id="GsmNo2" placeholder="Gsm No 2" maxlength="8">
                                                                     <label for="GsmNo2">Gsm No 2</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -721,7 +737,8 @@
                                                                     <input type="text" class="form-control" id="address" placeholder="Address">
                                                                     <label for="address">Address</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-map-location-dot fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         
@@ -732,13 +749,14 @@
                                                                     <input type="email" class="form-control" id="Relationship" placeholder="Relationship">
                                                                     <label for="incidentLocation">Email</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-at fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/email.svg" alt="email" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                     </div> <!-- /.row -->
                                                     <div class="row align-items-center mb-3">
                                                         <div class="col-md-auto ms-auto">
-                                                            <button type="button" class="btn btn-primary hstack" id="addBtn"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                            <button type="button" class="btn btn-moi hstack" id="addBtn"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
                                                         </div>
                                                         <!--end col-->
                                                     </div>
@@ -747,7 +765,7 @@
                                                         <div class="col-12">
                                                             <div class="table-responsive table-card data_table">
                                                                 <table class="table align-middle table-nowrap table-bordered" id="userTable">
-                                                                    <thead class="table-info">
+                                                                    <thead class="table-moi">
                                                                         <tr>
                                                                             <th scope="col">Civil ID</th>
                                                                             <th scope="col">Civil ID Expire Date</th>
@@ -816,17 +834,18 @@
                                         <div id="POA" class="tab-pane" role="tabpanel" aria-labelledby="POA">
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
-                                                    <span class="ribbon-three ribbon-three-success">
+                                                    <span class="ribbon-three ribbon-three-moi">
                                                         <span>Applicant Data</span></span>
  
                                                     <div class="row g-3 my-4">
                                                         <div class="col-lg-3 ">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="requestNo" placeholder="Request No" readonly />
-                                                                    <label for="requestNo">Request No</label>
+                                                                    <input type="text" class="form-control" id="requestNo_data" placeholder="Request No" readonly />
+                                                                    <label for="requestNo_data">Request No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-hashtag fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="hash" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 ">
@@ -835,7 +854,8 @@
                                                                     <input type="text" class="form-control" id="applicantStatus" placeholder="Reconciliation Applicant Status" value="124" readonly />
                                                                     <label for="applicantStatus">Reconciliation Applicant Status</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-command fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="hash" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 ">
@@ -848,7 +868,9 @@
                                                                     </select>
                                                                     <label for="applicantPOA">Select logged person POA / Applicant</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-command fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/applicantType.svg" alt="POA" class="img-fluid img-icon" />
+                                                                </span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -860,7 +882,8 @@
                                                                     <input type="number" class="form-control" id="civilID" placeholder="Civil ID">
                                                                     <label for="civilID">Civil ID</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -869,7 +892,8 @@
                                                                     <input type="date" class="form-control" id="civilIDExpiryDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="civilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -878,14 +902,14 @@
                                                                     <input type="text" class="form-control" id="applicantName" placeholder="Applicant name">
                                                                     <label for="applicantName">Applicant name</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="applicantName" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating singleSelect">
-                                                                    <select class="form-select multiSelect" id="nationality"
-                                                                        aria-label="Floating label">
+                                                                    <select class="form-select multiSelect" id="nationality" aria-label="Floating label">
                                                                         <option value="">Please select</option>
                                                                         <option value="afghan">Afghan</option>
                                                                         <option value="albanian">Albanian</option>
@@ -1092,7 +1116,8 @@
                                                                     </select>
                                                                     <label for="nationality">Nationality</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-flag fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/nationality.svg" alt="nationality" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1101,7 +1126,8 @@
                                                                     <input type="number" class="form-control" id="passportNumber" placeholder="Passport Number">
                                                                     <label for="passportNumber">Passport Number</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-passport fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/passport_black.svg" alt="passport" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1110,7 +1136,8 @@
                                                                     <input type="date" class="form-control" id="PassportExpiryDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="PassportExpiryDate">Passport Expiry Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         
@@ -1133,7 +1160,8 @@
                                                                     </select>
                                                                     <label for="governorateID">Governorate</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="governorate" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1144,7 +1172,8 @@
                                                                     </select>
                                                                     <label for="incidentLocation">Willayat</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-location-crosshairs fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="Willayat" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1153,8 +1182,8 @@
                                                                     <input type="number" class="form-control" id="GsmNo1" placeholder="Gsm No 1" maxlength="8">
                                                                     <label for="GsmNo1">Gsm No 1</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i
-                                                                        class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1163,7 +1192,8 @@
                                                                     <input type="number" class="form-control" id="GsmNo2" placeholder="Gsm No 2" maxlength="8">
                                                                     <label for="GsmNo2">Gsm No 2</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1172,7 +1202,8 @@
                                                                     <input type="text" class="form-control" id="address" placeholder="Address">
                                                                     <label for="address">Address</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-map-location-dot fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         
@@ -1183,7 +1214,8 @@
                                                                     <input type="email" class="form-control" id="Relationship" placeholder="Relationship">
                                                                     <label for="incidentLocation">Email</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-at fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/email.svg" alt="email" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                     </div> <!-- /.row -->
@@ -1192,7 +1224,7 @@
 
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
-                                                    <span class="ribbon-three ribbon-three-info">
+                                                    <span class="ribbon-three ribbon-three-moi">
                                                         <span>Attorney or Agent Data</span></span>
     
                                                     <div class="row g-3 my-4">
@@ -1202,7 +1234,8 @@
                                                                     <input type="number" class="form-control" id="authorizerCivilID" placeholder="Authorizer Civil ID">
                                                                     <label for="authorizerCivilID">Authorizer Civil ID</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1211,7 +1244,8 @@
                                                                     <input type="date" class="form-control" id="authorizercivilIDExpiryDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="authorizercivilIDExpiryDate">Authorizer Civil ID Expiry Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1220,7 +1254,8 @@
                                                                     <input type="text" class="form-control" id="authorizerName" placeholder="Name">
                                                                     <label for="authorizerName">Name</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="Name" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1233,7 +1268,8 @@
                                                                     </select>
                                                                     <label for="authorizerGender">Gender</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-venus-mars fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/gender.svg" alt="gender" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1242,7 +1278,8 @@
                                                                     <input type="number" class="form-control" id="powerAttorneyNo" placeholder="Power Of attorney No">
                                                                     <label for="powerAttorneyNo">Power Of attorney No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/POA.svg" alt="poa" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1251,7 +1288,8 @@
                                                                     <input type="date" class="form-control" id="powerAttorneyExpireDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="powerAttorneyExpireDate">Power Of Attorney Expire Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1260,7 +1298,8 @@
                                                                     <input type="date" class="form-control" id="datePowerAttorney" placeholder="dd-MMM-yyyy">
                                                                     <label for="datePowerAttorney">Date Of Power of Attorney</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1269,7 +1308,8 @@
                                                                     <input type="number" class="form-control" id="lawyerCardNumber" placeholder="Lawyer Card Number" />
                                                                     <label for="lawyerCardNumber">Lawyer Card Number</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-id-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1278,7 +1318,8 @@
                                                                     <input type="date" class="form-control" id="lawyerCardStartDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="lawyerCardStartDate">Lawyer Card Start Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1287,7 +1328,8 @@
                                                                     <input type="date" class="form-control" id="lawyerCardEndDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="lawyerCardEndDate">Lawyer Card End Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1300,7 +1342,8 @@
                                                                     </select>
                                                                     <label for="lawyerCardActivated">The Lawyer Card is Activated</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-id-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1309,7 +1352,8 @@
                                                                     <input type="number" class="form-control" id="GsmNo" placeholder="Gsm No" maxlength="8">
                                                                     <label for="GsmNo1">Gsm No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1318,7 +1362,8 @@
                                                                     <input type="email" class="form-control" id="lawyerEmail" placeholder="Email" />
                                                                     <label for="lawyerEmail">Email</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-at fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/email.svg" alt="email" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1331,7 +1376,8 @@
                                                                     </select>
                                                                     <label for="typePowerAttorney">Type Of Power Of Attorney</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-map-location-dot fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/applicantType.svg" alt="" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         
@@ -1349,7 +1395,7 @@
 
                                                     <div class="row align-items-center mb-3">
                                                         <div class="col-md-auto ms-auto">
-                                                            <button type="button" class="btn btn-primary hstack" id="addBtnPowerAttorney"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                            <button type="button" class="btn btn-moi hstack" id="addBtnPowerAttorney"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
                                                         </div>
                                                         <!--end col-->
                                                     </div>
@@ -1358,7 +1404,7 @@
                                                         <div class="col-12">
                                                             <div class="table-responsive table-card data_table">
                                                                 <table class="table align-middle table-nowrap table-bordered" id="userPowerAttorneyTable">
-                                                                    <thead class="table-success">
+                                                                    <thead class="table-moi">
                                                                         <tr>
                                                                             <th scope="col">Civil ID</th>
                                                                             <th scope="col">Civil ID Expire Date</th>
@@ -1427,7 +1473,7 @@
                                         <div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3">
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
-                                                    <span class="ribbon-three ribbon-three-danger">
+                                                    <span class="ribbon-three ribbon-three-moi">
                                                         <span>Guardian</span></span>
  
                                                     <div class="row g-3 my-4">
@@ -1437,7 +1483,8 @@
                                                                     <input type="text" class="form-control" id="guardianRequestNo" placeholder="Request No" readonly />
                                                                     <label for="guardianRequestNo">Request No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-hashtag fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/requestType.svg" alt="requestNo" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 ">
@@ -1446,7 +1493,8 @@
                                                                     <input type="text" class="form-control" id="guardianApplicantStatus" placeholder="Reconciliation Applicant Status" value="124" readonly />
                                                                     <label for="guardianApplicantStatus">Reconciliation Applicant Status</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-command fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/requestType.svg" alt="requestNo" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1458,7 +1506,8 @@
                                                                     <input type="number" class="form-control" id="guardianCivilID" placeholder="Civil ID">
                                                                     <label for="guardianCivilID">Civil ID</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1467,7 +1516,8 @@
                                                                     <input type="date" class="form-control" id="guardianCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="guardianCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1476,7 +1526,8 @@
                                                                     <input type="text" class="form-control" id="guardianApplicantName" placeholder="Applicant name">
                                                                     <label for="guardianApplicantName">Applicant name</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="applicantName" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1689,7 +1740,8 @@
                                                                     </select>
                                                                     <label for="guardianNationality">Nationality</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-flag fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/nationality.svg" alt="nationality" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         
@@ -1712,7 +1764,8 @@
                                                                     </select>
                                                                     <label for="governorateID">Governorate</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="governorate" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1723,7 +1776,8 @@
                                                                     </select>
                                                                     <label for="incidentLocation">Willayat</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-location-crosshairs fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="governorate" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1732,8 +1786,8 @@
                                                                     <input type="number" class="form-control" id="GsmNo1" placeholder="Gsm No 1" maxlength="8">
                                                                     <label for="GsmNo1">Gsm No 1</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i
-                                                                        class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1742,7 +1796,8 @@
                                                                     <input type="number" class="form-control" id="GsmNo2" placeholder="Gsm No 2" maxlength="8">
                                                                     <label for="GsmNo2">Gsm No 2</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1751,7 +1806,8 @@
                                                                     <input type="text" class="form-control" id="address" placeholder="Address">
                                                                     <label for="address">Address</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-map-location-dot fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         
@@ -1761,7 +1817,8 @@
                                                                     <input type="email" class="form-control" id="Relationship" placeholder="Relationship">
                                                                     <label for="incidentLocation">Email</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-at fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/email.svg" alt="email" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                     </div> <!-- /.row -->
@@ -1770,8 +1827,8 @@
 
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
-                                                    <span class="ribbon-three ribbon-three-warning">
-                                                        <span class="text-dark fw-bold">Underage / Minor Data</span></span>
+                                                    <span class="ribbon-three ribbon-three-moi">
+                                                        <span class="fw-bold">Underage / Minor Data</span></span>
     
                                                     <div class="row g-3 my-4">
                                                         <div class="col-lg-3">
@@ -1780,7 +1837,8 @@
                                                                     <input type="number" class="form-control" id="underageCivilNumber" placeholder="Underage Civil Number">
                                                                     <label for="underageCivilNumber">Underage Civil Number</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1789,7 +1847,8 @@
                                                                     <input type="date" class="form-control" id="underageCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="underageCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1798,7 +1857,8 @@
                                                                     <input type="text" class="form-control" id="underageName" placeholder="Name">
                                                                     <label for="underageName">Name</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="applicantName" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1807,7 +1867,8 @@
                                                                     <input type="text" class="form-control" id="underageNationality" placeholder="Nationality">
                                                                     <label for="underageNationality">Nationality</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-flag fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/nationality.svg" alt="nationality" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1816,7 +1877,8 @@
                                                                     <input type="number" class="form-control" id="GsmNo" placeholder="Gsm No" maxlength="8">
                                                                     <label for="GsmNo1">Gsm No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                     </div> <!-- /.row -->
@@ -1826,7 +1888,7 @@
 
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
-                                                    <span class="ribbon-three ribbon-three-info">
+                                                    <span class="ribbon-three ribbon-three-moi">
                                                         <span>Data of Guardianship Decision</span></span>
     
                                                     <div class="row g-3 my-4">
@@ -1836,7 +1898,8 @@
                                                                     <input type="number" class="form-control" id="guardianNumber" placeholder="Guardian Number">
                                                                     <label for="guardianNumber">Guardian Number</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-id-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-9">
@@ -1852,7 +1915,7 @@
 
                                                     <div class="row align-items-center mb-3">
                                                         <div class="col-md-auto ms-auto">
-                                                            <button type="button" class="btn btn-primary hstack" id="addBtnGuardian"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                            <button type="button" class="btn btn-moi hstack" id="addBtnGuardian"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
                                                         </div>
                                                         <!--end col-->
                                                     </div>
@@ -1861,7 +1924,7 @@
                                                         <div class="col-12">
                                                             <div class="table-responsive table-card data_table">
                                                                 <table class="table align-middle table-nowrap table-bordered" id="guardianTable">
-                                                                    <thead class="table-danger">
+                                                                    <thead class="table-moi">
                                                                         <tr>
                                                                             <th scope="col">Civil ID</th>
                                                                             <th scope="col">Civil ID Expire Date</th>
@@ -1931,8 +1994,8 @@
                                         <div id="step-4" class="tab-pane" role="tabpanel" aria-labelledby="step-4">
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
-                                                    <span class="ribbon-three ribbon-three-warning">
-                                                        <span class="fw-bold text-dark">Company Data</span></span>
+                                                    <span class="ribbon-three ribbon-three-moi">
+                                                        <span class="fw-bold text-black">Company Data</span></span>
  
                                                     <div class="row g-3 my-4">
                                                         <div class="col-lg-3 ">
@@ -1941,7 +2004,8 @@
                                                                     <input type="text" class="form-control" id="companyRequestNo" placeholder="Request No" readonly />
                                                                     <label for="companyRequestNo">Request No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-hashtag fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/requestType.svg" alt="requestType" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 ">
@@ -1950,7 +2014,8 @@
                                                                     <input type="text" class="form-control" id="companyApplicantStatus" placeholder="Reconciliation Applicant Status" value="124" readonly />
                                                                     <label for="companyApplicantStatus">Reconciliation Applicant Status</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-command fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/requestType.svg" alt="requestType" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1962,7 +2027,8 @@
                                                                     <input type="number" class="form-control" id="companyCivilID" placeholder="Civil ID">
                                                                     <label for="companyCivilID">Applicant Civil ID</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1971,7 +2037,8 @@
                                                                     <input type="date" class="form-control" id="companyCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
                                                                     <label for="companyCivilIDExpiryDate">Applicant Civil ID Expiry Date</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1980,7 +2047,8 @@
                                                                     <input type="number" class="form-control" id="CRNo" placeholder="Commercial Registration No">
                                                                     <label for="guardianApplicantName">Commercial Registration No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-id-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1989,7 +2057,8 @@
                                                                     <input type="text" class="form-control" id="companyName" placeholder="Company Name">
                                                                     <label for="companyName">Company Name</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="name" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -1998,7 +2067,8 @@
                                                                     <input type="text" class="form-control" id="companyAddress" placeholder="Company Address">
                                                                     <label for="companyAddress">Company Address</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -2007,7 +2077,8 @@
                                                                     <input type="number" class="form-control" id="companyMobileNo" placeholder="Company/Mobile Phone No" maxlength="8">
                                                                     <label for="companyMobileNo">Company/Mobile Phone No</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-mobile fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
@@ -2016,7 +2087,8 @@
                                                                     <input type="email" class="form-control" id="Relationship" placeholder="Relationship">
                                                                     <label for="incidentLocation">Email</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-at fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/email.svg" alt="email" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-9">
@@ -2025,25 +2097,26 @@
                                                                     <input type="file" class="form-control" id="PDFCommercialRegistration" placeholder="PDF Commercial Registration">
                                                                     <label for="PDFCommercialRegistration">PDF Commercial Registration</label>
                                                                 </div>
-                                                                <span class="input-group-text"><i class="fa-light fa-paperclip-vertical fa-lg"></i></span>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                     </div> <!-- /.row -->
 
                                                     <div class="row align-items-center mb-3">
                                                         <div class="col-md-auto ms-auto">
-                                                            <button type="button" class="btn btn-primary hstack" id="addBtnGuardian"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                            <button type="button" class="btn btn-moi hstack" id="addBtnGuardian"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
                                                         </div>
                                                         <!--end col-->
                                                     </div>
 
                                                     <fieldset class="mb-2">
-                                                        <legend class="fw-bold fs-5 text-warning">Owner / Partner Members Details</legend>
+                                                        <legend class="fw-bold fs-5 text-black">Owner / Partner Members Details</legend>
                                                         <div class="row">
                                                             <div class="col-12">
                                                                 <div class="table-responsive table-card ">
                                                                     <table class="table align-middle table-nowrap table-bordered table-striped">
-                                                                        <thead class="table-warning">
+                                                                        <thead class="table-moi">
                                                                             <tr>
                                                                                 <th>Owner Civil ID No</th>
                                                                                 <th>Name</th>
@@ -2066,12 +2139,12 @@
                                                     </fieldset>
 
                                                     <fieldset class="mb-2">
-                                                        <legend class="fw-bold fs-5 text-primary">Company Activities</legend>
+                                                        <legend class="fw-bold fs-5 text-black">Company Activities</legend>
                                                         <div class="row">
                                                             <div class="col-12">
                                                                 <div class="table-responsive table-card ">
                                                                     <table class="table align-middle table-nowrap table-bordered table-striped">
-                                                                        <thead class="table-primary">
+                                                                        <thead class="table-moi">
                                                                             <tr>
                                                                                 <th>Activities Code</th>
                                                                                 <th>Activities Description</th>
@@ -2092,12 +2165,12 @@
                                                     </fieldset>
 
                                                     <fieldset class="mb-2">
-                                                        <legend class="fw-bold text-success fs-5">The Authorized Signatories in the Company</legend>
+                                                        <legend class="fw-bold text-black fs-5">The Authorized Signatories in the Company</legend>
                                                         <div class="row">
                                                             <div class="col-12">
                                                                 <div class="table-responsive table-card ">
                                                                     <table class="table align-middle table-nowrap table-bordered table-striped">
-                                                                        <thead class="table-success">
+                                                                        <thead class="table-moi">
                                                                             <tr>
                                                                                 <th>Civil ID</th>
                                                                                 <th>Name</th>
@@ -2138,7 +2211,8 @@
                                                                         <input type="number" class="form-control" id="civilIDCR" placeholder="Civil ID">
                                                                         <label for="civilIDCR">Civil ID</label>
                                                                     </div>
-                                                                    <span class="input-group-text"><i class="fa-light fa-address-card fa-lg"></i></span>
+                                                                    <span class="input-group-text">
+                                                                        <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col mb-2">
@@ -2147,7 +2221,8 @@
                                                                         <input type="date" class="form-control" id="CRCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
                                                                         <label for="CRCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                     </div>
-                                                                    <span class="input-group-text"><i class="fa-light fa-calendar fa-lg"></i></span>
+                                                                    <span class="input-group-text">
+                                                                        <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col mb-2">
@@ -2156,7 +2231,8 @@
                                                                         <input type="text" class="form-control" id="CRName" placeholder="Name">
                                                                         <label for="CRName">Name</label>
                                                                     </div>
-                                                                    <span class="input-group-text"><i class="fa-light fa-user fa-lg"></i></span>
+                                                                    <span class="input-group-text">
+                                                                        <img src="assets/images/icon/himSelf.svg" alt="applicantName" class="img-fluid img-icon" /></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col mb-2">
@@ -2171,7 +2247,7 @@
                                                         </div> <!-- /.row -->
                                                         <div class="row align-items-center mb-3">
                                                             <div class="col-md-auto ms-auto">
-                                                                <button type="button" class="btn btn-primary hstack" id="addBtnCR"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                                <button type="button" class="btn btn-moi hstack" id="addBtnCR"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
                                                             </div>
                                                             <!--end col-->
                                                         </div> <!-- ./row -->
@@ -2188,7 +2264,7 @@
                                                             <div class="col-12">
                                                                 <div class="table-responsive table-card ">
                                                                     <table class="table align-middle table-nowrap table-bordered table-striped">
-                                                                        <thead class="table-danger">
+                                                                        <thead class="table-moi">
                                                                             <tr>
                                                                                 <th>POA Civil ID</th>
                                                                                 <th>Civil ID Expire Date</th>
@@ -2230,7 +2306,7 @@
                     $(e).prop("checked", !0);
                 }
             </script>
-            <!-- <button class="btn btn-primary p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn"
+            <!-- <button class="btn btn-moi p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn"
                 type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample">
                 <i class="icon ti ti-settings fs-7"></i>

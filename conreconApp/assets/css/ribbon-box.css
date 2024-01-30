@@ -568,6 +568,22 @@
 .ribbon-three-warning::after {
 	border-top-color: #e8bc52
 }
+
+
+.ribbon-three-moi span {
+	background: var(--vz-primary);
+}
+.ribbon-three-moi span:before {
+	background: var(--vz-primary);
+}
+.ribbon-three-moi span:after {
+	background: var(--vz-primary);
+}
+.ribbon-three-moi::after {
+	border-top-color: var(--vz-primary);
+}
+
+
 .ribbon-three-danger span {
 	background: #ed5e5e
 }

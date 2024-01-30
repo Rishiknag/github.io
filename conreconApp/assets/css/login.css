@@ -4,3 +4,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.bg-login-card {
+    background-color: var(--vz-primary);
+}
+.border-input {
+    border: 1px solid var(--vz-primary);
+    border-radius: 0.5rem;
+}

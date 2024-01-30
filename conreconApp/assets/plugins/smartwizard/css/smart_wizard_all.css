@@ -82,8 +82,8 @@
     border-radius: 0.25rem;
     font-weight: 400;
     color: var(--sw-toolbar-btn-color);
-    background-color: var(--sw-toolbar-btn-background-color);
-    border: 1px solid var(--sw-toolbar-btn-background-color);
+    background-color: var(--vz-primary);
+    border: 1px solid var(--vz-primary);
 }
 
 .sw .toolbar > .sw-btn.disabled, .sw .toolbar > .sw-btn:disabled {
@@ -102,7 +102,8 @@
     margin-top: 0;
     margin-bottom: 0;
     /* background: transparent linear-gradient(333deg, #1E4B83 0%, #041656 100%, #693FFB 100%) 0% 0% no-repeat padding-box; */
-    background-color: var(--sw-nav-color);
+    /* background-color: var(--sw-nav-color); */
+    background-color: var(--vz-primary);
     border-radius: 0.5rem 0.5rem 0 0;
     min-height: 52px;
 }
@@ -119,7 +120,7 @@
     padding: 0.5rem 1rem;
     text-decoration: none;
     /* color: var(--sw-anchor-active-secondary-color); */
-    color: #6691e7;
+    color: var(--sw-nav-color);
 }
 
 .sw > .nav .nav-link:hover, .sw > .nav .nav-link:active, .sw > .nav .nav-link:focus {
@@ -278,7 +279,7 @@
 }
 
 .sw-theme-basic > .nav .nav-link.active {
-    color: var(--sw-anchor-active-primary-color) !important;
+    color: var(--sw-nav-color) !important;
     cursor: pointer;
 }
 
@@ -292,21 +293,26 @@
     transform: translateX(-50%);
     -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-    border-top-color: var(--sw-anchor-active-primary-color);
+    border-top-color: var(--vz-primary-hover);
     z-index: 1;
 }
 
 .sw-theme-basic > .nav .nav-link.active::after {
-    background: var(--sw-anchor-active-primary-color) !important;
+    background: var(--vz-primary-hover) !important;
 }
 
 .sw-theme-basic > .nav .nav-link.done {
-    color: var(--sw-anchor-done-primary-color);
+    /* color: var(--sw-anchor-done-primary-color); */
+    color: var(--bs-body-bg);
     cursor: pointer;
+    img {
+        filter: invert();
+    }
 }
 
 .sw-theme-basic > .nav .nav-link.done::after {
-    background: var(--sw-anchor-done-primary-color);
+    /* background: var(--sw-anchor-done-primary-color); */
+    background: var(--bs-body-bg);
 }
 
 .sw-theme-basic > .nav .nav-link.disabled {

@@ -184,6 +184,10 @@
     text-align: center;
     /* width: 120px; */
     justify-content: flex-start;
+    background-color: var(--bs-body-bg);
+    border-radius: 0 1.2rem;
+    padding: 0.625rem;
+    box-shadow: var(--vz-card-box-shadow);
 }
 .services_label {
     font-display: swap;

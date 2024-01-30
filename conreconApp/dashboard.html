@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/dashboard.css" />
 </head>
 
-<body class="bg-body">
+<body class="">
     <!-- Preloader -->
     <div class="preloader">
         <img src="assets/images/svgs/khanjar.svg" alt="loader" class="lds-ripple img-fluid" />
@@ -31,9 +31,9 @@
                 <!-- Start Vertical Layout Sidebar -->
                 <!-- ---------------------------------- -->
                 <div class="brand-logo d-flex align-items-center justify-content-between">
-                    <a href="dashboard.html" class="text-nowrap logo-img">
-                        <img src="assets/images/svgs/khanjar-white.svg" class="dark-logo" alt="Logo-Dark" width="42" />
-                        <img src="assets/images/svgs/khanjar-white.svg" class="light-logo" alt="Logo-light" width="42" />
+                    <a href="dashboard.html" class="logo-img">
+                        <img src="assets/images/logo-white.svg" class="dark-logo" alt="Logo-Dark" width="69" />
+                        <img src="assets/images/logo-white.svg" class="light-logo" alt="Logo-light" width="69" />
                     </a>
                     <a href="javascript:void(0)"
                         class="sidebartoggler ms-auto text-decoration-none fs-5 d-block d-xl-none">
@@ -203,13 +203,13 @@
                                     <li class="nav-item dropdown header-item topbar-user">
                                         <a class="nav-link pe-0" href="javascript:void(0)" id="drop1"
                                             data-bs-toggle="dropdown" aria-expanded="false">
-                                            <div class="d-flex align-items-center">
-                                                <div class="user-profile-img">
+                                            <div class="">
+                                                <div class="user-profile-img d-flex align-items-center">
                                                     <span class="text-start me-xl-2">
                                                         <span class="d-none d-xl-inline-block me-1 fw-medium user-name-text">Mohammed</span>
                                                     </span>
-                                                    <img src="assets/images/avatar.svg" class="rounded-circle" width="35" height="35" alt="" />
-                                                    
+                                                    <!-- <img src="assets/images/avatar.svg" class="rounded-circle" width="35" height="35" alt="" /> -->
+                                                    <i class="fal fa-user-circle"></i>
                                                 </div>
                                             </div>
                                         </a>
@@ -247,7 +247,7 @@
                                                     
                                                 </div>
                                                 <div class="d-grid py-4 px-7 pt-8">
-                                                    <a href="index.html" class="btn btn-outline-primary">Log Out</a>
+                                                    <a href="index.html" class="btn btn-moi">Log Out</a>
                                                 </div>
                                             </div>
 
@@ -381,55 +381,56 @@
                             <!-- /.row -->
                             <!-- <hr> -->
                             <h4 class="mt-0 text-violet fw-bold fs-8">Dashboard</h4>
-                            <div class="services_flex" style="padding-top: calc(70px + 30px);"> <!--   -->
+                            <div class="services_flex"> <!-- style="padding-top: calc(70px + 30px);"  -->
                                 <a href="javascript:void(0)" class="services_iconList">
                                     <div class="services_icon">
-                                        <img src="assets/images/svgs/icon-mailbox.svg" />
+                                        <img src="assets/images/icon/inbox.svg" />
                                     </div>
                                     <div class="services_label">My Inbox</div>
                                 </a>
                                 <a href="createNew.html" class="services_iconList">
                                     <div class="services_icon">
-                                        <img src="assets/images/svgs/icon-speech-bubble.svg" />
+                                        <img src="assets/images/icon/createNew.svg" />
                                     </div>
                                     <div class="services_label">Create New Request</div>
                                 </a>
                                 <a href="javascript:void(0)" class="services_iconList">
                                     <div class="services_icon">
-                                        <img src="assets/images/svgs/icon-favorites.svg" />
+                                        <img src="assets/images/icon/against_view.svg" />
                                     </div>
                                     <div class="services_label">Against Registration and view</div>
                                 </a>
                                 <a href="javascript:void(0)" class="services_iconList">
                                     <div class="services_icon">
-                                        <img src="assets/images/svgs/icon-briefcase.svg" />
+                                        <img src="assets/images/icon/compliant_view.svg" />
                                     </div>
                                     <div class="services_label">Complaint Registration and view</div>
                                 </a>
                                 <a href="javascript:void(0)" class="services_iconList">
                                     <div class="services_icon">
-                                        <img src="assets/images/svgs/icon-dd-mobile.svg" />
-                                    </div>
-                                    <div class="services_label">Agreed Argument is not followed</div>
-                                </a>
-                                <a href="javascript:void(0)" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/images/svgs/icon-dd-chat.svg" />
-                                    </div>
-                                    <div class="services_label">Request Lost Argument</div>
-                                </a>
-                                <a href="javascript:void(0)" class="services_iconList">
-                                    <div class="services_icon">
-                                        <img src="assets/images/svgs/icon-dd-lifebuoy.svg" />
+                                        <img src="assets/images/icon/region.svg" />
                                     </div>
                                     <div class="services_label">Select Region and Willayat</div>
                                 </a>
                                 <a href="javascript:void(0)" class="services_iconList">
                                     <div class="services_icon">
-                                        <img src="assets/images/svgs/icon-dd-application.svg" />
+                                        <img src="assets/images/icon/final.svg" />
                                     </div>
                                     <div class="services_label">Final Submission</div>
                                 </a>
+                                <a href="javascript:void(0)" class="services_iconList">
+                                    <div class="services_icon">
+                                        <img src="assets/images/icon/request_Lost.svg" />
+                                    </div>
+                                    <div class="services_label">Request Lost Argument</div>
+                                </a>
+                                <a href="javascript:void(0)" class="services_iconList">
+                                    <div class="services_icon">
+                                        <img src="assets/images/icon/agreed_Argument.svg" />
+                                    </div>
+                                    <div class="services_label">Agreed Argument is not followed</div>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
