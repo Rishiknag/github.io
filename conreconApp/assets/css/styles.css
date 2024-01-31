@@ -1099,9 +1099,10 @@ html[data-boxed-layout=boxed] .container-xxl {
 
 .topbar .navbar .navbar-nav .nav-item .nav-link i {
   font-size: 35px;
+}
+.topbar .navbar .navbar-nav .nav-item .nav-link .user-profile-img i {
   color: var(--vz-primary);
 }
-
 @media (min-width: 992px) {
   .topbar .navbar .navbar-nav .nav-item .nav-link {
     line-height: 36px;
