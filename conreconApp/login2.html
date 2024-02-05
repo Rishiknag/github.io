@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme" data-layout="vertical">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#c39b34">
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/png" href="assets/images/svgs/khanjar.svg" />
+
+  <!-- Core Css -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/login.css" />
+  <title>Login</title>
+</head>
+
+<body class="login-page--body">
+  <!-- Preloader -->
+  <div class="preloader">
+    <img src="assets/images/svgs/khanjar.svg" alt="loader" class="lds-ripple img-fluid" />
+  </div>
+  <div id="main-wrapper">
+    <div class="position-relative overflow-hidden radial-gradient min-vh-100 w-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-8 col-lg-6 col-xxl-6">
+            <a href="index.html" class="text-nowrap logo-img text-center d-block mb-0 w-100 mb-3">
+              <img src="assets/images/svgs/khanjar-white.svg" class="dark-logo" alt="Logo-Dark" width="199" />
+              <img src="assets/images/svgs/khanjar.svg" class="light-logo" alt="Logo-light" width="99" />
+            </a>
+            <div class="card mb-0 bg-body">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <ul class="nav nav-pills user-profile-tab" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-5 py-3 active"
+                          id="pills-non-residents-tab" data-bs-toggle="pill" data-bs-target="#pills-non-residents"
+                          type="button" role="tab" aria-controls="pills-non-residents" aria-selected="true">
+                          <i class="ti ti-user-circle me-2 fs-7"></i>
+                          <span class="d-none d-md-block fw-bolder">Non-Residents</span>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-5 py-3"
+                          id="pills-omani-citizen-tab" data-bs-toggle="pill" data-bs-target="#pills-omani-citizen"
+                          type="button" role="tab" aria-controls="pills-omani-citizen" aria-selected="false"
+                          tabindex="-1">
+                          <i class="ti ti-id me-2 fs-7"></i>
+                          <span class="d-none d-md-block fw-bolder">Omani Citizen / Residents</span>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade active show" id="pills-non-residents" role="tabpanel"
+                        aria-labelledby="pills-non-residents-tab" tabindex="0">
+                        <div class="row mt-4">
+                          <div class="col-12">
+                            <div class="card w-100 position-relative overflow-hidden mb-0 border-0 shadow-none">
+                              <div class="card-body p-4">
+                                <h5 class="card-title fw-bold">For investors who do not hold an Omani identity or residency</h5>
+                                <form action="dashboard.html">
+                                  <div class="row mt-4">
+                                    <div class="col-lg-6">
+                                      <div class="mb-3">
+                                        <label for="exampleInputtext1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputtext1"
+                                          placeholder="email">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                      <div class="d-flex align-items-center justify-content-end mt-4 gap-6">
+                                        <button class="btn btn-primary py-8 rounded-2">
+                                          <i class="fad fa-arrow-left-to-arc fa-xl fa-fw"></i>&nbsp;Proceed</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div> <!-- /.row -->
+                      </div>
+
+                      <div class="tab-pane fade" id="pills-omani-citizen" role="tabpanel" aria-labelledby="pills-omani-citizen-tab" tabindex="0">
+                        <div class="row justify-content-center mt-4">
+                          <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="card w-100 position-relative overflow-hidden">
+                              <div class="card-body p-4 text-center">
+                                <h5 class="card-title fw-bolder">Omani ID / Resident ID</h5>
+                                <form action="dashboard.html" class="mt-4">
+                                  <img src="assets/images/login_smart_card.svg" alt="" class="img-fluid rounded-circle"
+                                    width="120" height="120">
+                                  <p class="my-4">To use this login method you need civil ID card and ID card reader.
+                                  </p>
+                                  <div class="d-flex align-items-center justify-content-center gap-6">
+                                    <button class="btn btn-primary w-100"><i
+                                        class="fad fa-arrow-left-to-arc fa-xl fa-fw"></i>&nbsp;Login</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="card w-100 position-relative overflow-hidden">
+                              <div class="card-body p-4 text-center">
+                                <h5 class="card-title fw-bolder">Mobile ID</h5>
+                                <form action="dashboard.html" class="mt-4">
+                                  <img src="assets/images/login_mobile_id.svg" alt="" class="img-fluid rounded-circle" width="120" height="120">
+                                  <div class="mb-3">
+                                    <label for="exampleInputtext1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputtext1" placeholder="email">
+                                  </div>
+                                  <div class="d-flex align-items-center justify-content-center gap-6">
+                                    <button class="btn btn-primary w-100"><i
+                                        class="fad fa-arrow-left-to-arc fa-xl fa-fw"></i>&nbsp;Login</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div> <!-- /.row -->
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- /.row -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dark-transparent sidebartoggler"></div>
+  <!-- Import Js Files -->
+
+  <script src="assets/js/jquery-3.7.1.js"></script>
+  <script src="assets/js/app.min.js"></script>
+  <script src="assets/js/app.init.js"></script>
+  <script src="assets/js/bootstrap.bundle.5.3.2.js"></script>
+  <script src="assets/js/simplebar.min.js"></script>
+
+  <script src="assets/js/sidebarmenu.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>
