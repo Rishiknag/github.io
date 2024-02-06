@@ -764,7 +764,7 @@ ul {
   }
 
   [data-layout=vertical] body[data-sidebartype=mini-sidebar] .left-sidebar:hover .nav-small-cap {
-    text-align: left;
+    text-align: right;
   }
 
   [data-layout=vertical] body[data-sidebartype=mini-sidebar] .left-sidebar:hover .nav-small-cap .nav-small-cap-icon {
@@ -7432,7 +7432,7 @@ html[dir=rtl] .left-sidebar {
 html[dir=rtl] .brand-logo .logo-img {
   /* transform: rotateY(180deg); */
   display: flex;
-  justify-content: end;
+  justify-content: start;
 }
 
 html[dir=rtl] .sidebar-nav .has-arrow::after {
