@@ -290,7 +290,7 @@
                                                 <legend class="fw-bolder fs-5">Offense against the Person / Company</legend>
                                                 <div class="row">
                                                     <div class="col-md-12">
-                                                        <div class="table-responsive">
+                                                        <div class="table-responsive data_table">
                                                             <table class="table table-bordered table-striped w-100 table-nowrap" id="compliantRegViewTable">
                                                                 <thead class="table-moi">
                                                                     <tr>
@@ -337,7 +337,7 @@
                                                                 <select name="" id="offenseCompliantType" class="form-select">
                                                                     <option value="">Please select</option>
                                                                     <option value="1">Compliant Request Type for Legitimate</option>
-                                                                    
+                                                                    <option value="2">Compliant Request Type for Civil or Commercial</option>
                                                                 </select>
                                                                 <label for="offenseCompliantType">Compliant Type</label>
                                                             </div>
@@ -351,6 +351,12 @@
                                                                 <select name="" id="compliantSubType" class="form-select">
                                                                     <option value="">Please select</option>
                                                                     <option value="1">My husbands Disagreement</option>
+                                                                    <option value="2">Request for Divorce or Separation</option>
+                                                                    <option value="3">Request for Custody or Alimony</option>
+                                                                    <option value="4">Dispute over selling the car</option>
+                                                                    <option value="5">Dispute over a piece of land</option>
+                                                                    <option value="6">Dispute over a well</option>
+
                                                                 </select>
                                                                 <label for="compliantSubType">Compliant Sub Type</label>
                                                             </div>
@@ -389,12 +395,68 @@
                                                 <span class="fs-4">My husbands Disagreement</span></span>
                                         </a>
                                     </li>
-                                    <li class="nav-item d-none">
-                                        <a class="nav-link" href="#company">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#divorce">
                                             <span class="num">
                                                 <!-- <i class="fa-light fa-fort me-2"></i> -->
-                                                <img src="assets/images/icon/company.svg" alt="Company" class="img-fluid img-icon me-2">
-                                                <span class="fs-4">Company</span></span>
+                                                <img src="assets/images/icon/company.svg" alt="Divorce" class="img-fluid img-icon me-2">
+                                                <span class="fs-4">Divorce or Separation</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#custody">
+                                            <span class="num">
+                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
+                                                <img src="assets/images/icon/company.svg" alt="custody" class="img-fluid img-icon me-2">
+                                                <span class="fs-4">Custody or Alimony</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#selling">
+                                            <span class="num">
+                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
+                                                <img src="assets/images/icon/company.svg" alt="selling" class="img-fluid img-icon me-2">
+                                                <span class="fs-4">Dispute Selling Car</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#land">
+                                            <span class="num">
+                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
+                                                <img src="assets/images/icon/company.svg" alt="land" class="img-fluid img-icon me-2">
+                                                <span class="fs-4">Dispute of Land</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#well">
+                                            <span class="num">
+                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
+                                                <img src="assets/images/icon/company.svg" alt="well" class="img-fluid img-icon me-2">
+                                                <span class="fs-4">Dispute of Well</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#others1">
+                                            <span class="num">
+                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
+                                                <img src="assets/images/icon/company.svg" alt="others1" class="img-fluid img-icon me-2">
+                                                <span class="fs-4">Others 1</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#others2">
+                                            <span class="num">
+                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
+                                                <img src="assets/images/icon/company.svg" alt="others2" class="img-fluid img-icon me-2">
+                                                <span class="fs-4">Others 2</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#others3">
+                                            <span class="num">
+                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
+                                                <img src="assets/images/icon/company.svg" alt="others3" class="img-fluid img-icon me-2">
+                                                <span class="fs-4">Others 3</span></span>
                                         </a>
                                     </li>
                                 </ul>
@@ -558,19 +620,29 @@
                                                 </div>
                                             </div>
                                         </div>
-    
-                                        <div id="company" class="tab-pane" role="tabpanel" aria-labelledby="company">
+                                        <!-- ######## Divorce or Separation Start ######## -->
+                                        <div id="divorce" class="tab-pane" role="tabpanel" aria-labelledby="divorce">
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
                                                     <span class="ribbon-three ribbon-three-moi">
-                                                        <span class="fw-bold text-black">Company Data</span></span>
+                                                        <span>Request for Divorce or Separation</span></span>
     
                                                     <div class="row g-3 my-3">
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="number" class="form-control" id="companyCivilID" placeholder="Civil ID">
-                                                                    <label for="companyCivilID">Civil ID</label>
+                                                                    <input type="number" class="form-control" id="divorceRequestNo" placeholder="Request No" readonly />
+                                                                    <label for="divorceRequestNo">Request No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="divorceCivilID" placeholder="Civil ID">
+                                                                    <label for="divorceCivilID">Civil ID</label>
                                                                 </div>
                                                                 <span class="input-group-text">
                                                                     <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
@@ -579,8 +651,8 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="companyCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
-                                                                    <label for="companyCivilIDExpiryDate">Civil ID Expiry Date</label>
+                                                                    <input type="date" class="form-control" id="divorceCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <label for="divorceCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
                                                                     <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
@@ -589,299 +661,926 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="number" class="form-control" id="CRNo" placeholder="Commercial Registration No">
-                                                                    <label for="guardianApplicantName">Commercial Registration No</label>
+                                                                    <input type="text" class="form-control" id="divorceName" placeholder="Name">
+                                                                    <label for="divorceName">Name</label>
                                                                 </div>
                                                                 <span class="input-group-text">
-                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="Applicant name" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="companyName" placeholder="Company Name">
-                                                                    <label for="companyName">Company Name</label>
+                                                                    <input type="number" class="form-control" id="divorceContract" placeholder="Divorce Contract No">
+                                                                    <label for="divorceContract">Divorce Contract No</label>
                                                                 </div>
                                                                 <span class="input-group-text">
-                                                                    <img src="assets/images/icon/himSelf.svg" alt="name" class="img-fluid img-icon" /></span>
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="text" class="form-control" id="companyAddress" placeholder="Company Address">
-                                                                    <label for="companyAddress">Company Address</label>
+                                                                    <input type="text" class="form-control" id="divorceRequestDetails" placeholder="Request Details">
+                                                                    <label for="divorceRequestDetails">Request Details</label>
                                                                 </div>
                                                                 <span class="input-group-text">
-                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="number" class="form-control" id="companyMobileNo" placeholder="Company/Mobile Phone No" maxlength="8">
-                                                                    <label for="companyMobileNo">Company/Mobile Phone No</label>
+                                                                    <input type="date" class="form-control" id="divorceDate" placeholder="dd-MMM-yyyy">
+                                                                    <label for="divorceDate">Date of Divorce</label>
                                                                 </div>
                                                                 <span class="input-group-text">
-                                                                    <img src="assets/images/icon/mobile_black.svg" alt="mobile" class="img-fluid img-icon" /></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="input-group">
-                                                                <div class="form-floating">
-                                                                    <input type="email" class="form-control" id="Relationship" placeholder="Relationship">
-                                                                    <label for="incidentLocation">Email</label>
-                                                                </div>
-                                                                <span class="input-group-text">
-                                                                    <img src="assets/images/icon/email.svg" alt="email" class="img-fluid img-icon" /></span>
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="file" class="form-control" id="PDFCommercialRegistration" placeholder="PDF Commercial Registration">
-                                                                    <label for="PDFCommercialRegistration">PDF Commercial Registration</label>
+                                                                    <textarea name="" class="form-control" id="divorceRemarks" cols="30" rows="10"></textarea>
+                                                                    <label for="divorceRemarks">Remarks</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="file" class="form-control" id="divorceAttachment" placeholder="Choose file">
+                                                                    <label for="divorceAttachment">Attachment</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- /.row -->
+                                                    <div class="row align-items-center mb-3">
+                                                        <div class="col-md-auto ms-auto">
+                                                            <button type="button" class="btn btn-moi hstack" id="divorceAddBtn">
+                                                                <i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                        </div>
+                                                        <!--end col-->
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="table-responsive table-card data_table">
+                                                                <table class="table align-middle table-nowrap table-bordered" id="divorceTable">
+                                                                    <thead class="table-moi">
+                                                                        <tr>
+                                                                            <th scope="col">Request No</th>
+                                                                            <th scope="col">Civil ID</th>
+                                                                            <th scope="col">Civil ID Expiry Date</th>
+                                                                            <th scope="col">Name</th>
+                                                                            <th scope="col">Request Type</th>
+                                                                            <th scope="col">Request Status</th>
+                                                                            <th scope="col">Applicant Type</th>
+                                                                            <th scope="col">Divorce Contract No</th>
+                                                                            <th scope="col">Request Details</th>
+                                                                            <th scope="col" class="w-5"></th>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <ul class="list-inline hstack gap-2 mb-0">
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Edit">
+                                                                                        <a  class="edit-item-btn"><i class="ti ti-pencil align-bottom text-white btn btn-info"></i></a>
+                                                                                    </li>
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Delete">
+                                                                                        <a class="remove-item-btn" id="removeBtn">
+                                                                                            <i class="ti ti-trash align-bottom text-white btn btn-danger"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </tbody>
+                                                                </table>
+                                                                <!--end table-->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.row -->
+                                                </div>
+                                            </div>
+                                            <!-- /.card -->
+                                        </div>
+                                        <!-- ######## Divorce or Separation End ######## -->
+
+                                        <!-- ######## Custody or Alimony Start ######## -->
+                                        <div id="custody" class="tab-pane" role="tabpanel" aria-labelledby="custody">
+                                            <div class="card ribbon-box border shadow radius-25 my-3">
+                                                <div class="card-body">
+                                                    <span class="ribbon-three ribbon-three-moi">
+                                                        <span>Request for Custody or Alimony</span></span>
+    
+                                                    <div class="row g-3 my-3">
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="custodyRequestNo" placeholder="Request No" readonly />
+                                                                    <label for="custodyRequestNo">Request No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="custodyCivilID" placeholder="Civil ID">
+                                                                    <label for="custodyCivilID">Civil ID</label>
                                                                 </div>
                                                                 <span class="input-group-text">
                                                                     <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="date" class="form-control" id="custodyCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <label for="custodyCivilIDExpiryDate">Civil ID Expiry Date</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="custodyName" placeholder="Name">
+                                                                    <label for="custodyName">Name</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="Applicant name" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="custodyChildCivilID" placeholder="Child Civil ID">
+                                                                    <label for="custodyChildCivilID">Child Civil ID</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="custodyChildName" placeholder="Child Name">
+                                                                    <label for="custodyChildName">Child Name</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="Applicant name" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="date" class="form-control" id="custodyChildDateBirth" placeholder="dd-MMM-yyyy">
+                                                                    <label for="custodyChildDateBirth">Child Date of Birth</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="custodyRequestDetails" placeholder="Request Details">
+                                                                    <label for="custodyRequestDetails">Request Details</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="custodyCertificate" placeholder="Divorce Certificate No.">
+                                                                    <label for="custodyCertificate">Divorce Certificate No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="date" class="form-control" id="custodyDivorceDate" placeholder="dd-MMM-yyyy">
+                                                                    <label for="custodyDivorceDate">Date of Divorce</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <textarea name="" class="form-control" id="custodyRemarks" cols="30" rows="10"></textarea>
+                                                                    <label for="custodyRemarks">Remarks</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="file" class="form-control" id="custodyAttachment" placeholder="Choose file">
+                                                                    <label for="custodyAttachment">Attachment</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
                                                     </div> <!-- /.row -->
-
                                                     <div class="row align-items-center mb-3">
                                                         <div class="col-md-auto ms-auto">
-                                                            <button type="button" class="btn btn-moi hstack" id="addBtnGuardian"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                            <button type="button" class="btn btn-moi hstack" id="custodyAddBtn">
+                                                                <i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
                                                         </div>
                                                         <!--end col-->
                                                     </div>
 
-                                                    <fieldset class="mb-2">
-                                                        <legend class="fw-bolder fs-5">Company Data</legend>
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="table-responsive table-card ">
-                                                                    <table class="table align-middle table-nowrap table-bordered table-striped" id="companyDataTable">
-                                                                        <thead class="table-moi">
-                                                                            <tr>
-                                                                                <th>Request No</th>
-                                                                                <th>CR Details ID</th>
-                                                                                <th>Civil ID</th>
-                                                                                <th>Civil ID Expire Date</th>
-                                                                                <th>CR No.</th>
-                                                                                <th>CR Name</th>
-                                                                                <th>Mobile No</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- /.row -->
-                                                    </fieldset>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="table-responsive table-card data_table">
+                                                                <table class="table align-middle table-nowrap table-bordered" id="custodyTable">
+                                                                    <thead class="table-moi">
+                                                                        <tr>
+                                                                            <th scope="col">Request No</th>
+                                                                            <th scope="col">Civil ID</th>
+                                                                            <th scope="col">Civil ID Expiry Date</th>
+                                                                            <th scope="col">Name</th>
+                                                                            <th scope="col">Request Type</th>
+                                                                            <th scope="col">Request Status</th>
+                                                                            <th scope="col">Divorce Certificate No</th>
+                                                                            <th scope="col">Child Civil ID</th>
+                                                                            <th scope="col">Child Name</th>
+                                                                            <th scope="col">Request Details</th>
+                                                                            <th scope="col" class="w-5"></th>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <ul class="list-inline hstack gap-2 mb-0">
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Edit">
+                                                                                        <a  class="edit-item-btn"><i class="ti ti-pencil align-bottom text-white btn btn-info"></i></a>
+                                                                                    </li>
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Delete">
+                                                                                        <a class="remove-item-btn" id="removeBtn">
+                                                                                            <i class="ti ti-trash align-bottom text-white btn btn-danger"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </tbody>
+                                                                </table>
+                                                                <!--end table-->
 
-                                                    <fieldset class="mb-2">
-                                                        <legend class="fw-bolder fs-5">Owner / Partner Members Details</legend>
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="table-responsive table-card ">
-                                                                    <table class="table align-middle table-nowrap table-bordered table-striped">
-                                                                        <thead class="table-moi">
-                                                                            <tr>
-                                                                                <th>Request No</th>
-                                                                                <th>Beneficiary ID</th>
-                                                                                <th>Owner Civil ID</th>
-                                                                                <th>Owner Name</th>
-                                                                                <th>Owner Mobile No</th>
-                                                                                <th>Designation</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
                                                             </div>
-                                                        </div> <!-- /.row -->
-                                                    </fieldset>
-
-                                                    <fieldset class="mb-2">
-                                                        <legend class="fw-bolder fs-5">Company Activities</legend>
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="table-responsive table-card ">
-                                                                    <table class="table align-middle table-nowrap table-bordered table-striped">
-                                                                        <thead class="table-moi">
-                                                                            <tr>
-                                                                                <th>Request No</th>
-                                                                                <th>Activities Code</th>
-                                                                                <th>Activities Description</th>
-                                                                                <th>Place of Activities</th>
-                                                                                <th>Place of Activities Description</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <th></th>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- /.row -->
-                                                    </fieldset>
-
-                                                    <fieldset class="mb-2">
-                                                        <legend class="fw-bolder fs-5">The Authorized Signatories in the Company</legend>
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="table-responsive table-card ">
-                                                                    <table class="table align-middle table-nowrap table-bordered table-striped">
-                                                                        <thead class="table-moi">
-                                                                            <tr>
-                                                                                <th>Request No</th>
-                                                                                <th>Civil ID</th>
-                                                                                <th>Name</th>
-                                                                                <th>Authorization Status</th>
-                                                                                <th>Authorization Status</th>
-                                                                                <th>Work Mobile No</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- /.row -->
-                                                    </fieldset>
-
-                                                    <fieldset>
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                              <div class="bd-callout bd-callout-info">
-                                                                  Attach the Power Of Attorney to persons not registered in the
-                                                                  <strong>Commercial Registry.</strong></a>
-                                                              </div>
-                                                            </div>     
-                                                        </div> <!-- /.row -->
-
-                                                        <div class="row">
-                                                            <div class="col mb-2">
-                                                                <div class="input-group">
-                                                                    <div class="form-floating">
-                                                                        <input type="number" class="form-control" id="civilIDCR" placeholder="Civil ID">
-                                                                        <label for="civilIDCR">Civil ID</label>
-                                                                    </div>
-                                                                    <span class="input-group-text">
-                                                                        <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col mb-2">
-                                                                <div class="input-group">
-                                                                    <div class="form-floating">
-                                                                        <input type="date" class="form-control" id="CRCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
-                                                                        <label for="CRCivilIDExpiryDate">Civil ID Expiry Date</label>
-                                                                    </div>
-                                                                    <span class="input-group-text">
-                                                                        <img src="assets/images/icon/calendar.svg" alt="calendar" class="img-fluid img-icon" /></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col mb-2">
-                                                                <div class="input-group">
-                                                                    <div class="form-floating">
-                                                                        <input type="text" class="form-control" id="CRName" placeholder="Name">
-                                                                        <label for="CRName">Name</label>
-                                                                    </div>
-                                                                    <span class="input-group-text">
-                                                                        <img src="assets/images/icon/himSelf.svg" alt="applicantName" class="img-fluid img-icon" /></span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col mb-2">
-                                                                <div class="input-group">
-                                                                    <div class="form-floating">
-                                                                        <input type="file" class="form-control" id="CRName" placeholder="Name">
-                                                                        <label for="CRName">Attach the Power</label>
-                                                                    </div>
-                                                                    <span class="input-group-text"><i class="fa-light fa-paperclip-vertical fa-lg"></i></span>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- /.row -->
-                                                        <div class="row align-items-center mb-3">
-                                                            <div class="col-md-auto ms-auto">
-                                                                <button type="button" class="btn btn-moi hstack" id="addBtnCR"><i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
-                                                            </div>
-                                                            <!--end col-->
-                                                        </div> <!-- ./row -->
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                              <div class="bd-callout bd-callout-danger">
-                                                                  View Power Of Attorney to persons not registered in the
-                                                                  <strong>Commercial Registry.</strong></a>
-                                                              </div>
-                                                            </div>     
-                                                        </div> <!-- /.row -->
-
-                                                        <div class="row">
-                                                            <div class="col-12">
-                                                                <div class="table-responsive table-card ">
-                                                                    <table class="table align-middle table-nowrap table-bordered table-striped">
-                                                                        <thead class="table-moi">
-                                                                            <tr>
-                                                                                <th>Request No</th>
-                                                                                <th>Civil ID</th>
-                                                                                <th>Civil ID Expire Date</th>
-                                                                                <th>Name</th>
-                                                                                <th>Attachment</th>
-                                                                                <th>Action</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                                <td></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div> <!-- /.row -->
-                                                    </fieldset>
-
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.row -->
                                                 </div>
                                             </div>
-                                            <!--end row-->
+                                            <!-- /.card -->
                                         </div>
+                                        <!-- ######## Custody or Alimony End ######## -->
+
+                                        <!-- ######## Dispute Selling Car Start ######## -->
+                                        <div id="selling" class="tab-pane" role="tabpanel" aria-labelledby="selling">
+                                            <div class="card ribbon-box border shadow radius-25 my-3">
+                                                <div class="card-body">
+                                                    <span class="ribbon-three ribbon-three-moi">
+                                                        <span>Dispute over Selling the Car</span></span>
+    
+                                                    <div class="row g-3 my-3">
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="sellingRequestNo" placeholder="Request No" readonly />
+                                                                    <label for="sellingRequestNo">Request No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="sellingCarNo" placeholder="Car No">
+                                                                    <label for="sellingCarNo">Car No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="Car No" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="sellingOwnerID" placeholder="Car Owner Civil ID">
+                                                                    <label for="sellingOwnerID">Car Owner Civil ID</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="sellingOwnerMobile" placeholder="Owner Mobile No" maxlength="8">
+                                                                    <label for="sellingOwnerMobile">Owner Mobile No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/mobile_black.svg" alt="Mobile" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="sellingOwnerName" placeholder="Car Owner Name">
+                                                                    <label for="sellingOwnerName">Car Owner Name</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="Name" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="sellingRequestDetails" placeholder="Request Details">
+                                                                    <label for="sellingRequestDetails">Request Details</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <textarea name="" class="form-control" id="sellingRemarks" cols="30" rows="10"></textarea>
+                                                                    <label for="sellingRemarks">Remarks</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="file" class="form-control" id="sellingAttachment" placeholder="Choose file">
+                                                                    <label for="sellingAttachment">Attachment</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- /.row -->
+                                                    <div class="row align-items-center mb-3">
+                                                        <div class="col-md-auto ms-auto">
+                                                            <button type="button" class="btn btn-moi hstack" id="sellingAddBtn">
+                                                                <i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                        </div>
+                                                        <!--end col-->
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="table-responsive table-card data_table">
+                                                                <table class="table align-middle table-nowrap table-bordered" id="sellingTable">
+                                                                    <thead class="table-moi">
+                                                                        <tr>
+                                                                            <th scope="col">Request No</th>
+                                                                            <th scope="col">Owner Civil ID</th>
+                                                                            <th scope="col">Owner Name</th>
+                                                                            <th scope="col">Request Type</th>
+                                                                            <th scope="col">Request Status</th>
+                                                                            <th scope="col">Car Plate No</th>
+                                                                            <th scope="col">Owner Mobile No</th>
+                                                                            <th scope="col">Request Details</th>
+                                                                            <th scope="col" class="w-5"></th>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <ul class="list-inline hstack gap-2 mb-0">
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Edit">
+                                                                                        <a  class="edit-item-btn"><i class="ti ti-pencil align-bottom text-white btn btn-info"></i></a>
+                                                                                    </li>
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Delete">
+                                                                                        <a class="remove-item-btn" id="removeBtn">
+                                                                                            <i class="ti ti-trash align-bottom text-white btn btn-danger"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </tbody>
+                                                                </table>
+                                                                <!--end table-->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.row -->
+                                                </div>
+                                            </div>
+                                            <!-- /.card -->
+                                        </div>
+                                        <!-- ######## Dispute Selling Car End ######## -->
+
+                                        <!-- ######## Dispute of Land Start ######## -->
+                                        <div id="land" class="tab-pane" role="tabpanel" aria-labelledby="land">
+                                            <div class="card ribbon-box border shadow radius-25 my-3">
+                                                <div class="card-body">
+                                                    <span class="ribbon-three ribbon-three-moi">
+                                                        <span>Dispute over a piece of land</span></span>
+    
+                                                    <div class="row g-3 my-3">
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="landRequestNo" placeholder="Request No" readonly />
+                                                                    <label for="landRequestNo">Request No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="landPlotNo" placeholder="Plot No" />
+                                                                    <label for="landPlotNo">Plot No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="Plot No" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="landOwnerID" placeholder="Owner Civil ID">
+                                                                    <label for="landOwnerID">Owner Civil ID</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="landOwnerName" placeholder="Owner Name">
+                                                                    <label for="landOwnerName">Owner Name</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="Name" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="landGovernorate" aria-label="Floating label">
+                                                                        <option value="">Please select</option>
+                                                                        <option value="1">Muscat</option>
+                                                                        <option value="2">AL Batinah South</option>
+                                                                        <option value="3">AL Batinah North</option>
+                                                                        <option value="4">AL Wusta</option>
+                                                                        <option value="5">Musandam</option>
+                                                                        <option value="6">AL Burimi</option>
+                                                                        <option value="7">AL Dakhiliyah</option>
+                                                                        <option value="8">AL Dhahira</option>
+                                                                        <option value="9">AL Sharqyah North</option>
+                                                                        <option value="10">AL Sharqyah South</option>
+                                                                        <option value="11">Dhofar</option>
+                                                                    </select>
+                                                                    <label for="landGovernorate">Governorate</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="governorate" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="landWillayat" aria-label="Floating label">
+                                                                        <option value="">Please select</option>
+                                                                    </select>
+                                                                    <label for="landWillayat">Willayat</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="Willayat" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="landVillage" aria-label="Floating label">
+                                                                        <option value="">Please select</option>
+                                                                    </select>
+                                                                    <label for="landVillage">Village</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="Village" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="landRequestDetails" placeholder="Request Details">
+                                                                    <label for="landRequestDetails">Request Details</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <textarea name="" class="form-control" id="landRemarks" cols="30" rows="10"></textarea>
+                                                                    <label for="landRemarks">Remarks</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="file" class="form-control" id="landAttachment" placeholder="Choose file">
+                                                                    <label for="landAttachment">Attachment</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- /.row -->
+                                                    <div class="row align-items-center mb-3">
+                                                        <div class="col-md-auto ms-auto">
+                                                            <button type="button" class="btn btn-moi hstack" id="landAddBtn">
+                                                                <i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                        </div>
+                                                        <!--end col-->
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="table-responsive table-card data_table">
+                                                                <table class="table align-middle table-nowrap table-bordered" id="landTable">
+                                                                    <thead class="table-moi">
+                                                                        <tr>
+                                                                            <th scope="col">Request No</th>
+                                                                            <th scope="col">Owner Civil ID</th>
+                                                                            <th scope="col">Owner Name</th>
+                                                                            <th scope="col">Request Type</th>
+                                                                            <th scope="col">Request Status</th>
+                                                                            <th scope="col">Applicant Type</th>
+                                                                            <th scope="col">Plot Serial No</th>
+                                                                            <th scope="col">Governorate</th>
+                                                                            <th scope="col">Willayat</th>
+                                                                            <th scope="col">Request Details</th>
+                                                                            <th scope="col" class="w-5"></th>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <ul class="list-inline hstack gap-2 mb-0">
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Edit">
+                                                                                        <a  class="edit-item-btn"><i class="ti ti-pencil align-bottom text-white btn btn-info"></i></a>
+                                                                                    </li>
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Delete">
+                                                                                        <a class="remove-item-btn" id="removeBtn">
+                                                                                            <i class="ti ti-trash align-bottom text-white btn btn-danger"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </tbody>
+                                                                </table>
+                                                                <!--end table-->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.row -->
+                                                </div>
+                                            </div>
+                                            <!-- /.card -->
+                                        </div>
+                                        <!-- ######## Dispute of Land End ######## -->
+
+                                        <!-- ######## Dispute of Well Start ######## -->
+                                        <div id="well" class="tab-pane" role="tabpanel" aria-labelledby="well">
+                                            <div class="card ribbon-box border shadow radius-25 my-3">
+                                                <div class="card-body">
+                                                    <span class="ribbon-three ribbon-three-moi">
+                                                        <span>Dispute over a Well</span></span>
+    
+                                                    <div class="row g-3 my-3">
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="wellRequestNo" placeholder="Request No" readonly />
+                                                                    <label for="wellRequestNo">Request No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="wellInventoryNo" placeholder="Well Inventory No" />
+                                                                    <label for="wellInventoryNo">Well Inventory No</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="Plot No" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="number" class="form-control" id="wellOwnerID" placeholder="Owner Civil ID">
+                                                                    <label for="wellOwnerID">Owner Civil ID</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="wellOwnerName" placeholder="Owner Name">
+                                                                    <label for="wellOwnerName">Owner Name</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/himSelf.svg" alt="Name" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="wellGovernorate" aria-label="Floating label">
+                                                                        <option value="">Please select</option>
+                                                                        <option value="1">Muscat</option>
+                                                                        <option value="2">AL Batinah South</option>
+                                                                        <option value="3">AL Batinah North</option>
+                                                                        <option value="4">AL Wusta</option>
+                                                                        <option value="5">Musandam</option>
+                                                                        <option value="6">AL Burimi</option>
+                                                                        <option value="7">AL Dakhiliyah</option>
+                                                                        <option value="8">AL Dhahira</option>
+                                                                        <option value="9">AL Sharqyah North</option>
+                                                                        <option value="10">AL Sharqyah South</option>
+                                                                        <option value="11">Dhofar</option>
+                                                                    </select>
+                                                                    <label for="wellGovernorate">Governorate</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="governorate" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="wellWillayat" aria-label="Floating label">
+                                                                        <option value="">Please select</option>
+                                                                    </select>
+                                                                    <label for="wellWillayat">Willayat</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="Willayat" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <select class="form-select" id="wellVillage" aria-label="Floating label">
+                                                                        <option value="">Please select</option>
+                                                                    </select>
+                                                                    <label for="wellVillage">Village</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/governorate.svg" alt="Village" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="text" class="form-control" id="wellRequestDetails" placeholder="Request Details">
+                                                                    <label for="wellRequestDetails">Request Details</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/hash.svg" alt="civilID" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <textarea name="" class="form-control" id="wellRemarks" cols="30" rows="10"></textarea>
+                                                                    <label for="wellRemarks">Remarks</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/address.svg" alt="address" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="input-group">
+                                                                <div class="form-floating">
+                                                                    <input type="file" class="form-control" id="wellAttachment" placeholder="Choose file">
+                                                                    <label for="wellAttachment">Attachment</label>
+                                                                </div>
+                                                                <span class="input-group-text">
+                                                                    <img src="assets/images/icon/civilID_black.svg" alt="calendar" class="img-fluid img-icon" /></span>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!-- /.row -->
+                                                    <div class="row align-items-center mb-3">
+                                                        <div class="col-md-auto ms-auto">
+                                                            <button type="button" class="btn btn-moi hstack" id="wellAddBtn">
+                                                                <i class="ti ti-user-plus align-bottom me-1"></i>Add / Save</button>
+                                                        </div>
+                                                        <!--end col-->
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="table-responsive table-card data_table">
+                                                                <table class="table align-middle table-nowrap table-bordered" id="wellTable">
+                                                                    <thead class="table-moi">
+                                                                        <tr>
+                                                                            <th scope="col">Request No</th>
+                                                                            <th scope="col">Owner Civil ID</th>
+                                                                            <th scope="col">Owner Name</th>
+                                                                            <th scope="col">Request Type</th>
+                                                                            <th scope="col">Request Status</th>
+                                                                            <th scope="col">Applicant Type</th>
+                                                                            <th scope="col">Well Inventory No</th>
+                                                                            <th scope="col">Governorate</th>
+                                                                            <th scope="col">Willayat</th>
+                                                                            <th scope="col">Request Details</th>
+                                                                            <th scope="col" class="w-5"></th>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td></td>
+                                                                            <td>
+                                                                                <ul class="list-inline hstack gap-2 mb-0">
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Edit">
+                                                                                        <a  class="edit-item-btn"><i class="ti ti-pencil align-bottom text-white btn btn-info"></i></a>
+                                                                                    </li>
+                                                                                    <li class="list-inline-item"
+                                                                                        data-bs-toggle="tooltip"
+                                                                                        data-bs-trigger="hover"
+                                                                                        data-bs-placement="top"
+                                                                                        title="Delete">
+                                                                                        <a class="remove-item-btn" id="removeBtn">
+                                                                                            <i class="ti ti-trash align-bottom text-white btn btn-danger"></i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <!--end tr-->
+                                                                    </tbody>
+                                                                </table>
+                                                                <!--end table-->
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.row -->
+                                                </div>
+                                            </div>
+                                            <!-- /.card -->
+                                        </div>
+                                        <!-- ######## Dispute of Well End ######## -->
+
+                                        <!-- ######## Others 1 Start ######## -->
+                                        <div id="others1" class="tab-pane" role="tabpanel" aria-labelledby="others1">
+
+                                        </div>
+                                        <!-- ######## Others 1 End ######## -->
+
+                                        <!-- ######## Others 2 Start ######## -->
+                                        <div id="others2" class="tab-pane" role="tabpanel" aria-labelledby="others2">
+
+                                        </div>
+                                        <!-- ######## Others 2 End ######## -->
+
+                                        <!-- ######## Others 3 Start ######## -->
+                                        <div id="others3" class="tab-pane" role="tabpanel" aria-labelledby="others3">
+
+                                        </div>
+                                        <!-- ######## Others 3 End ######## -->
+                                        
                                     </div>
                                 </form>
                             </div>
