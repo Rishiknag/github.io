@@ -21,6 +21,19 @@ new DataTable('#againstRegistrationViewTable', {
 		"targets": [9]
 	}],
 });
+// Against Registration and view
+new DataTable('#againstDataTable', {
+	processing: true,
+    "destroy": true,
+	"dom": '<"top"f>rt<"bottom"ilp>',
+	"columnDefs": [{
+		"searchable": false,
+		"orderable": false,
+		//"visible": false,
+		"targets": [7]
+	}],
+})
+// Complaint Registration and View
 new DataTable('#personDataTable', {
     processing: true,
     "destroy": true,
