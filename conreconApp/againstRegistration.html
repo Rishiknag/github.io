@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/plugins/smartwizard/css/smart_wizard_all.css">
     <!-- dataTables -->
     <link rel="stylesheet" href="assets/plugins/dataTables/css/dataTables.bootstrap5.css" />
+    <!-- Flat Picker CSS -->
+    <link rel="stylesheet" href="assets/plugins/flatpickr/flatpickr.css" />
 </head>
 
 <body>
@@ -289,7 +291,7 @@
                                             <fieldset class="mt-3">
                                                 <legend></legend>
                                                 <div class="row my-3">
-                                                    <div class="col-auto mb-2">
+                                                    <div class="col-lg-3 col-sm-6 mb-2">
                                                         <div class="input-group">
                                                             <div class="form-floating">
                                                                 <input type="text" class="form-control" id="offenseRequestNo" placeholder="Request No" readonly />
@@ -299,7 +301,7 @@
                                                                 <img src="assets/images/icon/hash.svg" alt="calendar" class="img-fluid img-icon" /></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-auto mb-2">
+                                                    <div class="col-lg-3 col-sm-6 mb-2">
                                                         <div class="input-group">
                                                             <div class="form-floating">
                                                                 <input type="text" class="form-control" id="offenseRequestType" placeholder="Request No" readonly />
@@ -309,7 +311,7 @@
                                                                 <img src="assets/images/icon/requestType.svg" alt="offenseRequestType" class="img-fluid img-icon"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-auto mb-2">
+                                                    <div class="col-lg-3 col-sm-6 mb-2">
                                                         <div class="input-group">
                                                             <div class="form-floating">
                                                                 <select name="" id="againstRequestType" class="form-select">
@@ -324,15 +326,16 @@
                                                                 <img src="assets/images/icon/requestType.svg" alt="againstRequestType" class="img-fluid img-icon"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-auto mb-2">
+                                                    <div class="col-lg-3 col-sm-6 mb-2">
                                                         <div class="input-group">
                                                             <div class="form-floating">
                                                               <select name="" id="againstApplicantType" class="form-select">
                                                                 <option value="">Please select</option>
                                                                 <option value="1">Himself</option>
-                                                                <option value="2">Power Of Attorney(POA)</option>
-                                                                <option value="3">Guardian</option>
+                                                                <!-- <option value="2">Power Of Attorney(POA)</option>
+                                                                <option value="3">Guardian</option> -->
                                                                 <option value="4">Company</option>
+
                                                               </select>
                                                               <label for="againstApplicantType">Against Applicant Type</label>
                                                             </div>
@@ -340,7 +343,7 @@
                                                                 <img src="assets/images/icon/applicantType.svg" alt="applicantType" class="img-fluid img-icon"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-auto mb-2">
+                                                    <div class="col-lg-3 col-sm-6 mb-2">
                                                         <div class="input-group">
                                                             <div class="form-floating">
                                                               <input type="text" class="form-control" id="offenseApplicantType" readonly />
@@ -350,10 +353,10 @@
                                                                 <img src="assets/images/icon/applicantType.svg" alt="applicantType" class="img-fluid img-icon"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-auto mb-2">
+                                                    <div class="col-lg-3 col-sm-6 mb-2">
                                                         <div class="input-group">
                                                             <div class="form-floating">
-                                                                <input type="text" class="form-control" id="dateId" placeholder="dd-MMM-yyyy" value="22-01-2024" readonly>
+                                                                <input type="text" class="form-control" id="dateId" placeholder="dd-MMM-yyyy" value="22/01/2024" data-provider="flatpickr" />
                                                                 <label for="dateId">Date</label>
                                                             </div>
                                                             <span class="input-group-text">
@@ -371,18 +374,18 @@
 
                     <div class="row mt-4">
                         <div class="col-xxl-12">
-                            <div id="smartwizard">
-                                <ul class="nav nav-progress">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#himSelf">
+                            <div id="smartwizard1" dir="rtl" class="sw sw-theme-basic sw-justified">
+                                <ul class="nav nav-tabs-custom">
+                                    <li class="nav-item" id="himSelf_li">
+                                        <a class="nav-link" href="#himSelf" data-bs-toggle="tab" role="tab">
                                             <span class="num">
                                                 <!-- <i class="fa-light fa-images-user me-2"></i> -->
                                                 <img src="assets/images/icon/himSelf.svg" alt="himSelf" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Himself</span></span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#company">
+                                    <li class="nav-item" id="company_li">
+                                        <a class="nav-link" href="#company" data-bs-toggle="tab" role="tab">
                                             <span class="num">
                                                 <!-- <i class="fa-light fa-fort me-2"></i> -->
                                                 <img src="assets/images/icon/company.svg" alt="Company" class="img-fluid img-icon me-2">
@@ -412,7 +415,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="civilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="civilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="civilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -432,7 +435,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="PassportExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="PassportExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="PassportExpiryDate">Passport Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -841,7 +844,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="companyCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="companyCivilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="companyCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1069,7 +1072,7 @@
                                                             <div class="col mb-2">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
-                                                                        <input type="date" class="form-control" id="CRCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                        <input type="text" class="form-control" id="CRCivilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                         <label for="CRCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                     </div>
                                                                     <span class="input-group-text">
@@ -1343,17 +1346,21 @@
     <script src="assets/js/app.init.js"></script>
     <script src="assets/js/bootstrap.bundle.5.3.2.js"></script>
     <script src="assets/js/simplebar.min.js"></script>
-
-    
     <script src="assets/js/theme.js"></script>
     <!-- smart Wizard -->
-    <script src="assets/plugins/smartwizard/js/jquery.smartWizard.js"></script>
-    <script src="assets/js/wizard.js"></script>
+    <!-- <script src="assets/plugins/smartwizard/js/jquery.smartWizard.js"></script>
+    <script src="assets/js/wizard.js"></script> -->
     <!-- dataTables -->
     <script src="assets/plugins/dataTables/js/jquery.dataTables.js"></script>
     <script src="assets/plugins/dataTables/js/dataTables.bootstrap5.js"></script>
+    <!-- Flat Picker JS -->
+    <script src="assets/plugins/flatpickr/flatpickr.js"></script>
+    <!-- if Enable Arabic -->
+    <!-- <script src="assets/plugins/flatpickr/ar.js"></script> -->
+    
     <script src="assets/js/custom.dataTables.js"></script>
     <script src="assets/js/cursor.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
 </body>
-
 </html>

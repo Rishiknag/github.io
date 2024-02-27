@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/plugins/smartwizard/css/smart_wizard_all.css">
     <!-- dataTables -->
     <link rel="stylesheet" href="assets/plugins/dataTables/css/dataTables.bootstrap5.css" />
+    <!--  Flat Picker CSS -->
+    <link rel="stylesheet" href="assets/plugins/flatpickr/flatpickr.css" />
 </head>
 
 <body>
@@ -264,8 +266,8 @@
                                                             <div class="form-floating">
                                                                 <select name="" id="requestType" class="form-select">
                                                                     <option value="">Please select</option>
-                                                                    <option value="1">Commercial</option>
-                                                                    <option value="2">Residency</option>
+                                                                    <option value="1">Residency</option>
+                                                                    <option value="2">Commercial</option>
                                                                     <option value="3">Commercial Residency</option>
                                                                 </select>
                                                                 <label for="requestType">Request Type</label>
@@ -301,36 +303,32 @@
 
                     <div class="row mt-4">
                         <div class="col-xxl-12">
-                            <div id="smartwizard">
-                                <ul class="nav nav-progress">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#himSelf">
+                            <div dir="rtl" class="sw sw-theme-basic sw-justified">
+                                <ul class="nav nav-tabs-custom" role="tablist">
+                                    <li class="nav-item" id="himSelf_li">
+                                        <a class="nav-link" href="#himSelf" data-bs-toggle="tab" role="tab">
                                             <span class="num">
-                                                <!-- <i class="fa-light fa-images-user me-2"></i> -->
                                                 <img src="assets/images/icon/himSelf.svg" alt="himSelf" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Himself</span></span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#POA">
+                                    <li class="nav-item" id="POA_li">
+                                        <a class="nav-link" href="#POA" data-bs-toggle="tab" role="tab">
                                             <span class="num">
-                                                <!-- <i class="ti ti-transform me-2"></i> -->
                                                 <img src="assets/images/icon/POA.svg" alt="POA" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Power Of Attorney(POA)</span></span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#step-3">
+                                    <li class="nav-item" id="guardian_li">
+                                        <a class="nav-link" href="#guardian" data-bs-toggle="tab" role="tab">
                                             <span class="num">
-                                                <!-- <i class="fa-light fa-people-roof me-2"></i> -->
                                                 <img src="assets/images/icon/guardian.svg" alt="Guardian" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Guardian</span></span>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#company">
+                                    <li class="nav-item" id="company_li">
+                                        <a class="nav-link" href="#company" data-bs-toggle="tab" role="tab">
                                             <span class="num">
-                                                <!-- <i class="fa-light fa-fort me-2"></i> -->
                                                 <img src="assets/images/icon/company.svg" alt="Company" class="img-fluid img-icon me-2">
                                                 <span class="fs-4">Company</span></span>
                                         </a>
@@ -355,9 +353,7 @@
                                                                     <img src="assets/images/icon/hash.svg" alt="hash" class="img-fluid img-icon" /></span>
                                                             </div>
                                                         </div>
-                                                    </div>
-    
-                                                    <div class="row g-3">
+                                                    
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
@@ -371,7 +367,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="civilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="civilIDExpiryDate" placeholder="dd/MMM/yyyy" data-provider="flatpickr" />
                                                                     <label for="civilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -391,7 +387,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="PassportExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="PassportExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="PassportExpiryDate">Passport Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -790,7 +786,7 @@
                                                 </div>
                                             </div>
                                         </div>
-    
+
                                         <div id="POA" class="tab-pane" role="tabpanel" aria-labelledby="POA">
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
@@ -849,7 +845,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="civilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="civilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr">
                                                                     <label for="civilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1093,7 +1089,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="PassportExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="PassportExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr">
                                                                     <label for="PassportExpiryDate">Passport Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1201,7 +1197,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="authorizercivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="authorizercivilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="authorizercivilIDExpiryDate">Authorizer Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1245,7 +1241,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="powerAttorneyExpireDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="powerAttorneyExpireDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="powerAttorneyExpireDate">Power Of Attorney Expire Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1255,7 +1251,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="datePowerAttorney" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="datePowerAttorney" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="datePowerAttorney">Date Of Power of Attorney</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1275,7 +1271,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="lawyerCardStartDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="lawyerCardStartDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="lawyerCardStartDate">Lawyer Card Start Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1285,7 +1281,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="lawyerCardEndDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="lawyerCardEndDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="lawyerCardEndDate">Lawyer Card End Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1430,7 +1426,7 @@
                                             </div>
                                         </div>
     
-                                        <div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3">
+                                        <div id="guardian" class="tab-pane" role="tabpanel" aria-labelledby="guardian">
                                             <div class="card ribbon-box border shadow radius-25 my-3">
                                                 <div class="card-body">
                                                     <span class="ribbon-three ribbon-three-moi">
@@ -1473,7 +1469,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="guardianCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="guardianCivilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="guardianCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1804,7 +1800,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="underageCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="underageCivilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="underageCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -1994,7 +1990,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="input-group">
                                                                 <div class="form-floating">
-                                                                    <input type="date" class="form-control" id="companyCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                    <input type="text" class="form-control" id="companyCivilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                     <label for="companyCivilIDExpiryDate">Applicant Civil ID Expiry Date</label>
                                                                 </div>
                                                                 <span class="input-group-text">
@@ -2178,7 +2174,7 @@
                                                             <div class="col mb-2">
                                                                 <div class="input-group">
                                                                     <div class="form-floating">
-                                                                        <input type="date" class="form-control" id="CRCivilIDExpiryDate" placeholder="dd-MMM-yyyy">
+                                                                        <input type="text" class="form-control" id="CRCivilIDExpiryDate" placeholder="dd-MMM-yyyy" data-provider="flatpickr" />
                                                                         <label for="CRCivilIDExpiryDate">Civil ID Expiry Date</label>
                                                                     </div>
                                                                     <span class="input-group-text">
@@ -2451,17 +2447,22 @@
     <script src="assets/js/app.init.js"></script>
     <script src="assets/js/bootstrap.bundle.5.3.2.js"></script>
     <script src="assets/js/simplebar.min.js"></script>
-
-    
     <script src="assets/js/theme.js"></script>
     <!-- smart Wizard -->
-    <script src="assets/plugins/smartwizard/js/jquery.smartWizard.js"></script>
-    <script src="assets/js/wizard.js"></script>
+    <!-- <script src="assets/plugins/smartwizard/js/jquery.smartWizard.js"></script>
+    <script src="assets/js/wizard.js"></script> -->
     <!-- dataTables -->
     <script src="assets/plugins/dataTables/js/jquery.dataTables.js"></script>
     <script src="assets/plugins/dataTables/js/dataTables.bootstrap5.js"></script>
+    <!-- Flat Picker JS -->
+    <script src="assets/plugins/flatpickr/flatpickr.js"></script>
+    <!-- if Enable Arabic -->
+    <!-- <script src="assets/plugins/flatpickr/ar.js"></script> -->
+
     <script src="assets/js/custom.dataTables.js"></script>
     <script src="assets/js/cursor.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
