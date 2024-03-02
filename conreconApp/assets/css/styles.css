@@ -7330,12 +7330,18 @@ html[dir=rtl] .input-group>.input-group-prepend:first-child>.input-group-text:no
 
 html[dir=rtl] .form-floating>label {
   right: 0;
-  /* left: auto; */
+  left: auto;
   font-size: 0.975rem;
   color: var(--bs-black) !important;
   font-weight: 600;
 }
-
+html[dir=rtl] .form-floating > .form-control:focus ~ label,
+html[dir=rtl] .form-floating > .form-control:not(:placeholder-shown) ~ label,
+html[dir=rtl] .form-floating > .form-control-plaintext ~ label,
+html[dir=rtl] .form-floating > .form-select ~ label {
+  color: rgba(var(--bs-body-color-rgb), 0.65);
+  transform: scale(0.85) translateY(-0.75rem) translateX(1.25rem);
+}
 html[dir=rtl] .form-switch .form-check-input {
   margin-left: 8px;
 }
