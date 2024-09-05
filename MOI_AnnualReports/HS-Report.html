@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+<head>
+    <meta name="description" content="">
+    <meta name="author" content="ALT Report">
+    <meta name="generator" content="ALT Report">
+    <meta name="theme-color" content="rgb(206 161 44)">
+    <title>HS Services by Governorate</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="images/Khanjar.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.5.3.3.css" />
+    <!-- dataTables-5 CSS -->
+    <link rel="stylesheet" type="text/css" href="css/dataTables-5/dataTables.bootstrap5.css" />
+    <!-- Animation CSS -->
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <!-- Multiselect -->
+    <link rel="stylesheet" type="text/css" href="Plugins/Multiselect/bootstrap-multiselect.css" />
+    <link rel="stylesheet" type="text/css" href="Plugins/Multiselect/multiselect.css" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/reports.css">
+    <link rel="stylesheet" type="text/css" href="css/report-dashboard.css">
+</head>
+
+<body class="d-flex flex-column h-100 body-bg">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+        <header>
+            <div class="px-3 py-2 text-bg-ts border-bottom">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="index.html"
+                            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none">
+                            <img src="images/khanjar-white.svg" alt="" class="me-2" width="70" />
+                        </a>
+
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small text-center">
+                            <li class="nav-item"><a id="date" class="nav-link d-flex align-items-center mt-1"
+                                    title="date" href="JavaScript:Void(0)"></a></li>
+                            <li class="nav-item"><a id="time" class="nav-link mt-1" title="time"
+                                    href="JavaScript:Void(0)"></a></li>
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active d-flex align-items-center">
+                                    <i class="fal fa-home fa-2x me-2"></i>
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="JavaScript:Void(0)" class="nav-link d-flex align-items-center">
+                                    <i class="fal fa-user-circle fa-2x me-2"></i>
+                                    Sridhar Talluri
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="JavaScript:Void(0)" class="nav-link d-flex align-items-center">
+                                    <i class="fal fa-power-off fa-2x me-2"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container mt-3 shadow-lg bg-white rounded">
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="col zero-padding">
+                    <!-- Tabs with icons on Card -->
+                    <div class="card card-nav-tabs bg-hs">
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper d-flex justify-content-between align-items-center">
+                                <ul class="nav nav-tabs" data-tabs="tabs">
+                                    <li class="nav-item"> <a class="nav-link" data-toggle="tab">
+                                            <i class="fal fa-search fa-fw fa-2x"></i>Health Services by Governorate</a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-tabs" data-tabs="tabs">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link"><i class="fal fa-chevron-left fa-xl"></i>Back</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Tabs with icons on Card -->
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row my-3">
+                <div class="col-3 mb-3">
+                    <div class="input-group">
+                        <div class="form-floating">
+                            <select name="" id="caseSubTypeId" class="form-select">
+                                <option value="">Please select</option>
+                                <option value="120">Municipal License</option>
+                                <option value="122">Municipal Service</option>
+                                <option value="123">Health Card</option>
+                                <option value="125">NOC for Vehicles</option>
+                                <option value="126">Advertising License</option>
+                                <option value="150">Main Board</option>
+                            </select>
+                            <label for="caseSubTypeId" class="">Request Type</label>
+                        </div>
+                        <span class="input-group-text"><i class="fa-light fa-diagram-project fa-lg"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="input-group">
+                        <div class="form-floating">
+                            <select id="selectYear" class="form-select">
+                                <option value="">Please select</option>
+                            </select>
+                            <label for="selectYear">Year</label>
+                        </div>
+                        <span class="input-group-text"><i class="fa-light fa-calendar-days fa-lg"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="input-group">
+                        <div class="form-floating">
+                            <select name="" id="monthId" class="form-select multiSelect" data-live-search="true"
+                                multiple title="Please select">
+                                <!-- <option value="">Please select</option> -->
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <label for="monthId">Month</label>
+                        </div>
+                        <span class="input-group-text"><i class="fa-light fa-calendar-check fa-lg"></i></span>
+                    </div>
+                </div>
+
+                <div class="col-3 mb-3">
+                    <div class="input-group">
+                        <div class="form-floating">
+                            <select name="" id="governorateID" class="form-select">
+                                <option value="">Please select</option>
+                                <option value="02">DHOFAR GOVERNORATE</option>
+                                <option value="03">MUSANDAM GOVERNORATE</option>
+                                <option value="04">AL BURAIMI GOVERNORATE</option>
+                                <option value="05">AL DAKHILIYAH GOVERNORATE</option>
+                                <option value="06">NORTH AL BATINAH GOVERNORATE</option>
+                                <option value="07">SOUTH AL BATINAH GOVERNORATE</option>
+                                <option value="08">SOUTH AL SHARQIYA GOVERNORATE</option>
+                                <option value="09">NORTH AL SHARQIYA GOVERNORATE</option>
+                                <option value="10">AL DHAHIRAH GOVERNORATE</option>
+                                <option value="11">AL WUSTA GOVERNORATE</option>
+                            </select>
+                            <label for="governorateID">Governorate</label>
+                        </div>
+                        <span class="input-group-text"><i class="fa-light fa-fort fa-lg"></i></span>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-between">
+                    <div class="d-flex justify-content-start">
+                        <div id="requestTypeBtn">
+                            <button type="button" class="btn btn-rounded btn-success btn-label" id="excel">
+                                <i class="fal fa-file-xls label-icon align-middle fa-2x"></i></button>
+                            <button type="button" class="btn btn-rounded bg-danger text-white mx-2 btn-label" id="generateReportBtn">
+                                <i class="fal fa-file-pdf label-icon align-middle fa-2x"></i></button>
+                            <button type="button" class="btn btn-rounded btn-light mx-2 btn-label" id="export">
+                                <i class="fal fa-print label-icon align-middle fa-2x"></i></button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn bg-hs me-1"><i class="fa-light fa-search fa-fw fa-lg"></i>&nbsp;Generate Report</button>
+                        <button type="button" class="btn btn-dark"><i class="fa-light fa-times fa-fw fa-lg"></i>&nbsp;Clear</button>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+
+            <!-- <hr />
+            <div class="clearfix"></div>
+
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped w-100 mt-3 mb-0" id="dataTableMajor">
+                            <thead class="thead-hs">
+                                <tr>
+                                    <th class="text-start">HS Ref No</th>
+                                    <th class="text-start">Willayat</th>
+                                    <th class="text-start">Request Date</th>
+                                    <th class="text-start">Entity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="">HS000042</td>
+                                    <td>Al-Suwaiq</td>
+                                    <td>Municipal License</td>
+                                    <td>Governmental</td>
+                                </tr>
+                                <tr>
+                                    <td class="">HS000048</td>
+                                    <td>Al-Khabura</td>
+                                    <td>Health Card</td>
+                                    <td>Private</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> -->
+            <!-- </.row> -->
+
+            <div class="clearfix"></div>
+            <!-- <hr> -->
+            <div class="row mb-3" id="hs_details">
+                <div class="col-12">
+                    <div class="table-responsive my-3">
+                        <table id="municipalLicenseTable" class="table table-bordered table-striped w-100">
+                            <caption class="txtSelect hs"></caption>
+                            <thead class="thead-hs">
+                                <tr>
+                                    <th rowspan="2" class="w-10">Months</th>
+                                    <!-- Municipal License -->
+                                    <th colspan="3">Private</th>
+                                    <th colspan="3">Governmental</th>
+                                </tr>
+                    
+                                <tr>
+                                    <!-- Municipal License -->
+                                    <th>New</th>
+                                    <th>Renew</th>
+                                    <th>Cancel</th>
+
+                                    <th>New</th>
+                                    <th>Renew</th>
+                                    <th>Cancel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center fw-bold">January</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">February</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">March</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">April</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">May</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">June</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">July</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">August</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">September</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">October</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">November</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center fw-bold">December</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                    </div> <!-- /.table-responsive -->
+
+                </div> <!-- /.col -->
+            </div> <!-- /.row -->
+            <div class="clearfix"></div>
+            <hr>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 text-bg-ts">
+        <div class="container">
+            <span class="text-white">
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                <a class="fw-bold text-white" href="https://www.moi.gov.om" target="_blank">Copyright &copy; Ministry of
+                    Interior</a> - All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="js/jquery-3.7.1.js"></script>
+    <!-- <script type="text/javascript" src="js/popper.1.14.6.js"></script>  -->
+    <script type="text/javascript" src="js/bootstrap.bundle.5.3.3.js"></script>
+    <!-- Date &amp; Time Live-->
+    <script type="text/javascript" src="js/Time/timejs.js"></script>
+    <!-- Date &amp; Time Live-->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- dataTables-5 -->
+    <script type="text/javascript" src="js/dataTables-5/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="js/dataTables-5/dataTables.bootstrap5.js"></script>
+    <script type="text/javascript" src="js/dataTables-5/dataTables.buttons.js"></script>
+    <script type="text/javascript" src="js/dataTables-5/jszip.js"></script>
+    <script type="text/javascript" src="js/dataTables-5/pdfmake.js"></script>
+    <script type="text/javascript" src="js/dataTables-5/vfs_fonts.js"></script>
+    <script type="text/javascript" src="js/dataTables-5/buttons.html5.js"></script>
+    <script type="text/javascript" src="js/dataTables-5/buttons.print.js"></script>
+    <script type="text/javascript" src='js/stopExecutionOnTimeout.js'></script>
+
+    <!-- Flat Picker JS -->
+    <script type="text/javascript" src="Plugins/flatpickr/flatpickr.js"></script>
+    <!-- if Enable Arabic -->
+    <!-- <script src="Plugins/flatpickr//ar.js"></script> -->
+    <!-- Multiselect -->
+    <script type="text/javascript" src="Plugins/Multiselect/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="js/HS-report.js"></script>
+
+</body>
+
+</html>

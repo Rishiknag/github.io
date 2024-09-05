@@ -1,0 +1,155 @@
+.multiselect-native-select {
+    float: none;
+    width: 100%;
+}
+
+.multiselect-native-select .btn-group {
+    width: 100%;
+    /* border: var(--vz-border-width) solid var(--vz-border-color); */
+    /* min-height: 52px;
+    border-radius: 8px; */
+    height: calc(2.5rem + calc(var(--bs-border-width) * 1));
+}
+
+.multiselect-container .input-group {
+    margin: 0 !important;
+}
+
+.multiselect-native-select .multiselect-item .input-group .input-group-btn {
+    display: none;
+}
+
+.multiselect-container>li>a>label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 4px 8px !important;
+    font-size: 1rem;
+}
+
+.multiselect-container>li>a>label input {
+    margin: 0 !important;
+    opacity: 0;
+}
+
+.multiselect-container>li>a>label:after {
+    content: "";
+    display: block;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    border: 1px solid #989ea6;
+    border-radius: 3px;
+    background: #fff;
+}
+.singleSelect .multiselect-container>li>a>label:after {
+    border: 0;
+}
+.multiselect-container>li {
+    color: #4e5969;
+    font-size: 1rem;
+}
+
+.multiselect-container>li.multiselect-all {
+    display: none;
+}
+
+.multiselect-container>li>a {
+    display: block;
+}
+
+.multiselect-container>li.active label {
+    font-weight: bold;
+    color: #1c1d1d !important;
+}
+
+.multiselect-container>li.active>a>label:after {
+    background: url("../../images/check-active.svg") no-repeat center;
+    border-color: transparent;
+}
+.singleSelect .multiselect-container>li.active>a>label:after {
+    display: none;
+}
+.multiselect-native-select .btn-group .dropdown-menu {
+    width: 100%;
+    position: absolute !important;
+    left: 0 !important;
+    transform: none !important;
+    z-index: 99999;
+    top: auto !important;
+    margin-top: 50px !important;
+    box-shadow: 0px 0px 30px #00000014;
+    border: 1px solid #989EA6;
+    border-radius: 4px;
+    padding: 0 10px 10px 10px;
+    max-height: 250px !important;
+}
+
+.top_position_multiselect .multiselect-native-select .btn-group .dropdown-menu {
+    /* transform: translate3d(0px, -300px, 0px) !important; */
+    bottom: 55px !important;
+}
+
+.multiselect-native-select .btn-group .dropdown-menu .multiselect-search {
+    border: 1px solid #bfc6cf;
+    border-radius: 8px !important;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-left: 39px;
+}
+
+.multiselect-filter {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding-top: 5px !important;
+}
+
+.multiselect-filter .input-group i {
+    position: absolute;
+    z-index: 9999;
+    top: 10px;
+    left: 10px;
+    color: #979EA7;
+    font-size: 20px;
+}
+
+.multiselect-native-select .btn-group .multiselect-selected-text {
+    width: 100%;
+    /* text-align: left; */
+    color: #4e5969;
+    /* font-size: 18px; */
+    white-space: nowrap;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.multiselect-native-select .btn-group .multiselect.form-select {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.multiselect-container>li>a>label.checkbox,
+.multiselect-container>li>a>label.radio {
+    margin: 0 !important;
+    color: #4e5969;
+}
+
+ul li .dropdown-item {
+    font-size: 1rem !important;
+}
+.multiselect-container>li.multiselect-group label {
+    flex-direction: row;
+    border-bottom: 1px dashed #c3cad3;
+}
+.multiselect-container>li.multiselect-group>a>label:after {
+    border: 0;
+    background: transparent;
+}
