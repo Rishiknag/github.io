@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
+        <title>About US</title>
         <link rel="icon" type="image/png" href="assets/images/synergy-bars.svg"/>
         <meta name="description" content="Applications">
         <meta name="keywords" content="Applications">
@@ -78,7 +78,7 @@
                 <div class="panel">
                     <ul class="nav-y gap-narrow fw-medium fs-6" data-uc-nav>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li class="current"><a href="about.html" class="active">About Us</a></li>
                         <li class="uc-parent">
                             <a href="#">Services</a>
                             <ul class="uc-nav-sub" data-uc-nav="">
@@ -109,7 +109,7 @@
                             </ul>
                         </li>
                         <li class="hr opacity-10 my-1"></li>
-                        <li class="current"><a href='contact.html' class="active">Contact</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
                     </ul>
                     <!-- <ul class="social-icons nav-x mt-4">
                         <li>
@@ -164,8 +164,8 @@
                             </div>
                             <div class="uc-navbar-center">
                                 <ul class="uc-navbar-nav fs-6 fw-bold gap-3 lg:gap-4 d-none lg:d-flex">
-                                    <li><a href="index.html" class="">Home</a></li>
-                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html" class="active">About Us</a></li>
                                     <li>
                                         <a href="#">Services <span data-uc-navbar-parent-icon></span></a>
                                         <div class="uc-dropbar uc-dropbar-top ft-primary text-unset fs-6 fw-normal hide-scrollbar p-0 rounded-2 overflow-hidden border border-dark dark:border-tertiary bg-white dark:bg-tertiary-700 dark:bg-gradient-45 from-tertiary to-transparent dark:text-white" data-uc-drop=" offset: 8; boundary: !.uc-navbar; stretch: x; animation: uc-animation-slide-top-small; animate-out: uc-animation-slide-top-small; duration: 150;">
@@ -418,7 +418,7 @@
                             </div>
                             <div class="uc-navbar-right">
                                 <a class='btn btn-md dark:text-white border border-dark dark:border-white dark:border-opacity-15 dark:bg-gradient-45 from-tertiary to-transparent fs-5 lg:px-3 d-none lg:d-inline-flex rounded-pill' href='contact.html'>Contact</a>
-                                <a class="btn btn-md btn-tertiary w-48px h-48px d-inline-flex lg:d-none active" href="#uc-menu-panel" data-uc-toggle>
+                                <a class="btn btn-md btn-tertiary w-48px h-48px d-inline-flex lg:d-none" href="#uc-menu-panel" data-uc-toggle>
                                     <i class="icon icon-2 unicon-menu"></i>
                                 </a>
                             </div>
@@ -431,145 +431,151 @@
 
         <!-- Wrapper start -->
         <div id="wrapper" class="wrap">
+            <div class="breadcrumbs panel z-1 py-2 bg-secondary dark:bg-gray-100 dark:bg-opacity-5 dark:text-white">
+                <div class="container max-w-xl">
+                    <ul class="breadcrumb nav-x justify-start items-center gap-1 fs-7 m-0 fw-bold">
+                        <li><img src="assets/images/svg/home.svg" alt="icon" class="me-1" data-uc-svg /></li>
+                        <li><a href='index.html'>Home</a></li>
+                        <li><i class="unicon-chevron-right fw-medium opacity-50 rtl:rotate-180"></i></li>
+                        <li><span class="opacity-50">About US</span></li>
+                    </ul>
+                </div>
+            </div>
 
-            <!-- Section start -->
-            <div id="hero_header" class="hero-header section panel overflow-hidden">
-                <div class="position-absolute top-0 start-0 end-0 min-h-screen overflow-hidden d-none lg:d-block" data-anime="targets: >*; scale: [0, 1]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 750});">
-                    <div class="position-absolute top-0 start-0 rotate-45" style="top: 30% !important; left: 18% !important">
-                        <img class="w-32px text-gray-900 dark:text-white" src="assets/images/svg/star-1.svg" alt="star-1" data-uc-svg>
-                    </div>
-                    <div class="position-absolute top-0 end-0 rotate-45" style="top: 15% !important; right: 18% !important">
-                        <img class="w-24px text-gray-900 dark:text-white" src="assets/images/svg/star-2.svg" alt="star-2" data-uc-svg>
+            <article class="post type-post single-post py-4 lg:py-6 xl:py-9">
+                <div class="container max-w-xl">
+                    <div class="post-header">
+                        <!-- Section start -->
+                        <div class="panel vstack gap-4 md:gap-6 xl:gap-8 text-center">
+                            <div class="panel vstack items-center max-w-400px sm:max-w-500px xl:max-w-md mx-auto gap-2 md:gap-3">
+                                <h1 class="h2 sm:h1 lg:display-6 xl:display-5 m-0 text-gradient">Let's get in About Us.</h1>
+                            </div>
+                            <figure class="featured-image m-0">
+                                <figure class="featured-image m-0 rounded ratio ratio-2x1 rounded uc-transition-toggle overflow-hidden">
+                                    <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/svg/content-15.svg" alt="About us" />
+                                </figure>
+                            </figure>
+                        </div>
                     </div>
                 </div>
-                <div class="section-outer panel pt-9 lg:pt-10 pb-6 sm:pb-8 lg:pb-9">
-                    <div class="container max-w-xl">
-                        <div class="section-inner panel mt-2 sm:mt-4 lg:mt-0" data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
-                            <div class="vstack items-center gap-2 lg:gap-4 mb-4 sm:mb-6 lg:mb-8 max-w-750px mx-auto text-center">
-                                <h1 class="h2 sm:h1 lg:display-6 xl:display-5 m-0">Let's get in touch.</h1>
-                                <p class="fs-6 sm:fs-5 text-dark dark:text-white text-opacity-70">Feel free to reach out to us using the options below, and our dedicated team will respond to your inquiries promptly.</p>
+                <div class="panel mt-4 lg:mt-6 xl:mt-9">
+                    <div class="container max-w-lg">
+                        <div class="post-content panel fs-6 md:fs-5" data-uc-lightbox="animation: scale">
+                            <p class="text-justify">
+                                SYNERGY, is a leading Omani information technology, consulting and business process services company
+                                specializing in state-of-the-art software & technology solutions and services to all organizations in
+                                Oman. With over 50% Omanization, SYNERGY strives to achieve the nationalistic
+                                vision of sustainable economic growth through skilled and competent Omani resources.
+                                SYNERGY achieved tremendous success in a short span of time and is continuously growing
+                                and expanding its scope of services delivering excellence to its customers across the
+                                country.
+                            </p>
+                            <p class="mt-3">
+                                SYNERGY is the leader in providing customers with valuable, convenient,
+                                relevant, and enjoyable online experience through a diversity of solutions and
+                                platforms.
+                            </p>
+                            <div class="panel mt-3">
+                                <figure class="float-end ms-3 mb-1">
+                                    <figure class="featured-image m-0 rounded ratio ratio-1x1 sm:w-300px  uc-transition-toggle overflow-hidden">
+                                        <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/svg/content-08.svg" alt="About" />
+                                        <a href="assets/images/svg/content-08.svg" class="position-cover" data-caption="About"></a>
+                                    </figure>
+                                    <!-- <figcaption class="fs-7 mt-1 text-center text-gray-400 dark:text-gray-200">About</figcaption> -->
+                                </figure>
+                                <p class="text-justify">
+                                    Synergy has been working with governments and enterprises ona range of
+                                    business verticals across the globe delivering innovative enterprise intelligence
+                                    solutions and platforms for seamless collaboration within and also for achieving
+                                    customer experience.
+                                </p>
+
+                                <p class="text-justify">A comprehensive set of platform-based solutions, coupled with a wide range
+                                    of IT services has uniquely positioned the company to address the dynamic requirements
+                                    of a variety of customers.</p>
+
+                                <p class="text-justify">Our delivery model provides the best services and resources drawn from a
+                                    committed pool of technologists and business analysts to provide optimal solutions. 
+                                    Synergy integrates its solution platforms and services to allow the customers to
+                                    undertake technology-based business transformation that allows reorganization in line
+                                    with today’s dynamic digital business environment.</p>
                             </div>
-                            <div class="overflow-hidden border border-dark dark:border-white dark:border-opacity-15 text-dark dark:text-white dark:bg-gradient-45 from-tertiary-600 to-transparent rounded-3">
-                                <div class="panel row child-cols-12 lg:child-cols-6 g-0">
-                                    <div class="order-1 lg:order-0">
-                                        <div class="panel overflow-hidden rounded-3 h-100 min-h-350px">
-                                            <figure class="panel h-100 m-0 rounded">
-                                                <canvas class="h-100 w-100"></canvas>
-                                                <img class="media-cover image" src="assets/images/hero-contact.jpg" alt="Hero image">
-                                            </figure>
-                                            <div class="position-cover text-white vstack justify-end p-4 lg:p-6 xl:p-9">
-                                                <div class="position-cover bg-gradient-to-t from-black to-transparent opacity-50"></div>
-                                                <div class="panel z-1">
-                                                    <div class="vstack gap-3">
-                                                        <p class="fs-5 xl:fs-4 fw-medium">“This software simplifies the website building process, making it a breeze to manage our online presence.”</p>
-                                                        <div class="vstack gap-0">
-                                                            <p class="fs-6 lg:fs-5 fw-medium">Satish Chandra Surla</p>
-                                                            <span class="fs-7 opacity-80">Founder & CEO</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            
+                            <div class="row child-cols-12 lg:child-cols-6 g-2 border-top py-4 mt-5 xl:py-5 xl:mt-6">
+                                <div class="order-1 lg:order-0">
+                                    <div class="inner-title mb-0 pb-0">
+                                        <h3 class="h4">Our Mission:</h3>
                                     </div>
-                                    <div class="order-0 lg:order-1">
-                                        <form class="vstack gap-2 p-3 sm:p-6 xl:p-8">
-                                            <p class="fs-6 text-dark dark:text-white text-opacity-70 mb-2">Have a question or feedback? Fill out the form below, and we'll get back to you as soon as possible.</p>
-                                            <div class="row child-cols-12 sm:child-cols-6 g-2">
-                                                <div>
-                                                    <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white" type="text" placeholder="Full name" required>
-                                                </div>
-                                                <div>
-                                                    <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white" type="email" placeholder="Your email" required>
-                                                </div>
+                                    <p class="text-justify">
+                                        To be the world leader in products, services and solutions that enable and transform the way
+                                        individuals and businesses gather, manage, distribute and communicate information by
+                                        providing outstanding service and solutions through dedication and excellence
+                                    </p>
+                                </div>
+                                <div class="order-0 lg:order-1">
+                                    <div class="inner-title mb-0 pb-0">
+                                        <h3 class="h4">Our Principles:</h3>
+                                    </div>
+                                    <p class="text-justify">Right Information within the Right Context to the Right Person at the Right Time for the
+                                        Right Business Purpose.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="post-author panel py-4 px-3 sm:p-3 xl:p-4 bg-gray-25 dark:bg-opacity-5 rounded lg:rounded-2">
+                            <div class="row g-4 items-center">
+                                <div class="col-12 sm:col-5 xl:col-3">
+                                    <figure class="featured-image m-0 rounded ratio ratio-1x1  uc-transition-toggle overflow-hidden">
+                                        <img class="media-cover image uc-transition-scale-up uc-transition-opaque" src="assets/images/svg/about5-01.png" alt="Amir Nisi">
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <div class="panel vstack items-start gap-2 md:gap-3">
+                                        <h4 class="h5 m-0">Our Quality Policy:</h4>
+                                        <p class="fs-6 text-justify">
+                                            We strive to provide solutions and service with emphasis on continuous improvement,
+                                            pro-active approach, build long-term client relationships based on mutual trust and respect.
+                                            Everything we do reflects the mission and the principles that make it possible.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Of container -->
+                </div> <!-- End Of panel -->
+            </article>
+
+            <!-- Newsletter -->
+            <div id="blog_newsletter" class="blog-newsletter section panel overflow-hidden">
+                <div class="section-outer panel pb-4 lg:pb-6 xl:pb-9">
+                    <div class="container max-w-xl">
+                        <div class="section-inner panel p-3 py-6 lg:p-6 xl:p-8 rounded-2 bg-gray-25 dark:bg-opacity-5 overflow-hidden">
+                            <div class="row child-cols-12 md:child-cols g-6 justify-between items-center" data-uc-grid>
+                                <div>
+                                    <div class="vstack gap-2 max-w-500px xl:max-w-600px">
+                                        <h2 class="h4 md:h3 lg:h2 m-0">Get the latest updates</h2>
+                                        <p class="fs-6 lg:fs-5">Subscribe to get our most-popular proposal eBook and more top revenue content to help you send docs faster.</p>
+                                        <form class="row child-cols g-1 mt-1 xl:mt-2">
+                                            <div>
+                                                <input class="form-control h-48px xl:h-56px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white" type="text" placeholder="Your email address" required="">
                                             </div>
-                                            <input class="form-control h-48px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white" type="text" placeholder="Subject">
-                                            <textarea class="form-control min-h-150px w-full bg-white dark:border-white dark:bg-opacity-10 dark:border-opacity-0 dark:text-white" placeholder="Your message.." required></textarea>
-                                            <button class="btn btn-info btn-md text-white mt-2" type="submit">Send message</button>
-                                            <p class="text-center">Or drop us a message via <a class="uc-link" href="mailto:hello@lexend.co">email</a>.</p>
+                                            <div class="col-12 sm:col-auto">
+                                                <button class="btn btn-md h-48px xl:h-56px w-100 lg:min-w-150px xl:min-w-200px btn-success text-white">Subscribe</button>
+                                            </div>
                                         </form>
+                                        <p class="fs-7 text-dark dark:text-white text-opacity-70">Don't worry we don't spam.</p>
                                     </div>
+                                </div>
+                                <div class="md:col-auto d-none md:d-block">
+                                    <img class="w-250px lg:w-300px xl:w-400px d-block dark:d-none" src="assets/images/svg/newsletter.svg" alt="newsletter">
+                                    <img class="w-250px lg:w-300px xl:w-400px d-none dark:d-block" src="assets/images/svg/newsletter-dark.svg" alt="newsletter-dark">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Section end -->
-
-            <!-- Section start -->
-            <div id="helpful-links" class="section panel overflow-hidden">
-                <div class="section-outer panel pb-6 sm:pb-8 lg:pb-9">
-                    <div class="container max-w-xl">
-                        <div class="section-inner panel">
-                            <div class="panel vstack gap-4 sm:gap-6 xl:gap-8">
-                                <h2 class="h4 sm:h3 lg:h2 m-0 text-center" data-anime="onview: -100; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: 100;">Other ways to reach us</h2>
-                                <div class="row child-cols-12 sm:child-cols-6 lg:child-cols-3 g-2 xl:g-3 justify-between col-match" data-anime="onview: -100; targets: > *; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});">
-                                    <div>
-                                        <div class="panel vstack gap-2 items-center text-center px-3 py-4 lg:py-6 xl:py-8 rounded-2 border border-dark dark:border-white dark:border-opacity-15 text-dark dark:text-white dark:bg-gradient-45 from-tertiary-600 to-transparent lg:hover:-translate-y-2 duration-150 transition-all">
-                                            <div class="cstack mb-2">
-                                                <img class="w-64px lg:w-80px d-block dark:d-none" src="assets/images/svg/icon-location.svg" alt="location-icon">
-                                                <img class="w-64px lg:w-80px d-none dark:d-block" src="assets/images/svg/icon-location-dark.svg" alt="location-icon-dark">
-                                            </div>
-                                            <h5 class="h5 m-0">Visit us</h5>
-                                            <p class="fs-6 opacity-70 dark:opacity-80">AL Rawaq, Muscat, OM</p>
-                                            <a href="#" class="uc-link fw-bold hstack gap-narrow justify-center">
-                                                <span>View on maps</span>
-                                                <i class="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="panel vstack gap-2 items-center text-center px-3 py-4 lg:py-6 xl:py-8 rounded-2 border border-dark dark:border-white dark:border-opacity-15 text-dark dark:text-white dark:bg-gradient-45 from-tertiary-600 to-transparent lg:hover:-translate-y-2 duration-150 transition-all">
-                                            <div class="cstack mb-2">
-                                                <img class="w-64px lg:w-80px d-block dark:d-none" src="assets/images/svg/icon-chat.svg" alt="chat-icon">
-                                                <img class="w-64px lg:w-80px d-none dark:d-block" src="assets/images/svg/icon-chat-dark.svg" alt="chat-icon-dark">
-                                            </div>
-                                            <h5 class="h5 m-0">Via chat</h5>
-                                            <p class="fs-6 opacity-70 dark:opacity-80">Get instant answers.</p>
-                                            <a href="#" class="uc-link fw-bold hstack gap-narrow justify-center">
-                                                <span>Let's chat</span>
-                                                <i class="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="panel vstack gap-2 items-center text-center px-3 py-4 lg:py-6 xl:py-8 rounded-2 border border-dark dark:border-white dark:border-opacity-15 text-dark dark:text-white dark:bg-gradient-45 from-tertiary-600 to-transparent lg:hover:-translate-y-2 duration-150 transition-all">
-                                            <div class="cstack mb-2">
-                                                <img class="w-64px lg:w-80px d-block dark:d-none" src="assets/images/svg/icon-internet.svg" alt="internet-icon">
-                                                <img class="w-64px lg:w-80px d-none dark:d-block" src="assets/images/svg/icon-internet-dark.svg" alt="internet-icon-dark">
-                                            </div>
-                                            <h5 class="h5 m-0">Report Issue</h5>
-                                            <p class="fs-6 opacity-70 dark:opacity-80">Get priority support.</p>
-                                            <a href="#" class="uc-link fw-bold hstack gap-narrow justify-center">
-                                                <span>Send report</span>
-                                                <i class="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="panel vstack gap-2 items-center text-center px-3 py-4 lg:py-6 xl:py-8 rounded-2 border border-dark dark:border-white dark:border-opacity-15 text-dark dark:text-white dark:bg-gradient-45 from-tertiary-600 to-transparent lg:hover:-translate-y-2 duration-150 transition-all">
-                                            <div class="cstack mb-2">
-                                                <img class="w-64px lg:w-80px d-block dark:d-none" src="assets/images/svg/icon-community.svg" alt="community-icon">
-                                                <img class="w-64px lg:w-80px d-none dark:d-block" src="assets/images/svg/icon-community-dark.svg" alt="community-icon-dark">
-                                            </div>
-                                            <h5 class="h5 m-0">Our community</h5>
-                                            <p class="fs-6 opacity-70 dark:opacity-80">Connect with users.</p>
-                                            <a href="#" class="uc-link fw-bold hstack gap-narrow justify-center">
-                                                <span>Join us now</span>
-                                                <i class="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Section end -->
         </div>
-
         <!-- Wrapper end -->
 
         <!-- Footer start -->
@@ -614,7 +620,7 @@
                                         <div class="panel vstack items-start gap-2 xl:gap-2 lg:max-w-1/2">
                                             <div>
                                                 <a class='panel text-none' href='index.html' style='width: 169px'>
-                                                    <img class="text-tertiary dark:text-primary" src="assets/images/synergy-logo-color.svg" alt="synergy" data-uc-svg>
+                                                    <img class="text-tertiary dark:text-primary" src="assets/images/synergy-logo-color.svg" alt="synergy" data-uc-svg />
                                                 </a>
                                                 <p class="mt-2">Design amazing digital experiences that create more happy in the world.</p>
                                             </div>

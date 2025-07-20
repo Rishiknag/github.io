@@ -1774,7 +1774,9 @@ p.text-muted:where(.uc-dark) {
     padding: 0;
     min-height: var(--uc-nav-height, 48px) !important
 }
-
+.uc-navbar-item, .uc-navbar-nav>li>a.active {
+    color: #3faec2;
+}
 .uc-navbar-float {
     position: absolute;
     top: 0;

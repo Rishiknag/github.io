@@ -34,3 +34,17 @@ ol.linenums li {
   -webkit-background-clip: text;
   background-clip: text;
 }
+.text-gradient {
+  background-color: var(--gradient-first);
+  background-image: linear-gradient(var(--gradient-angle),var(--gradient-first),var(--gradient-second));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  background: linear-gradient(45deg,var(--color-primary),var(--color-tertiary),var(--color-tertiary));
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0)
+}
+.text-justify {
+  text-align: justify;
+}
