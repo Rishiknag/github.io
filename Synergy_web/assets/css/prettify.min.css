@@ -54,6 +54,38 @@ ol.linenums li {
   margin-bottom: 15px;
   border-bottom: 1px dashed rgba(225, 223, 223, 0.1);
 }
+.list-style4 {
+	list-style: none;
+	padding: 0
+}
+.list-style4 li {
+	font-weight: 500;
+	position: relative;
+	padding: 0 0 0 40px;
+	margin: 0 0 14px 0
+}
+.list-style4 li span {
+	position: absolute;
+	top: 3px;
+	right: 0
+}
+.list-style4 li:last-child {
+	margin-bottom: 0
+}
+.list-style4 li:before {
+	content: "\eb2e";
+	font-family: 'Unicons';
+	color: #ffffff;
+	font-size: 18px;
+	background: #198754;
+	margin-right: 12px;
+	border-radius: 6px;
+	padding: 6px;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	line-height: 12px
+}
 .list-style6 {
 	list-style: none
 }
@@ -67,9 +99,9 @@ ol.linenums li {
 	margin-bottom: 0
 }
 .list-style6 li:before {
-	content: "\e64c";
-	font-family: 'themify';
-	font-size: 15px;
+	content: "\eb2e";
+	font-family: 'Unicons';
+	font-size: 29px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -78,7 +110,7 @@ ol.linenums li {
 }
 @media screen and (max-width: 767px) {
 	.list-style6 li {
-		font-size: 15px;
+		font-size: 29px;
 		line-height: 32px
 	}
 }
