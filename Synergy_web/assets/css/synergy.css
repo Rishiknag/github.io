@@ -174,7 +174,7 @@
     --color-secondary-700: #928e8b;
     --color-secondary-800: #615e5c;
     --color-secondary-900: #312f2e;
-    --color-info: #0099cc;
+    --color-info: #20A4C8;
     --color-info-10: #f7fcfd;
     --color-info-25: #f2fafc;
     --color-info-50: #e6f5fa;
@@ -1076,11 +1076,11 @@ svg :not([fill=none]) {
 }
 
 .uc-link {
-    color: var(--color-primary)
+    color: var(--color-info)
 }
 
 .uc-link:hover {
-    color: var(--color-primary-600)
+    color: var(--color-info-600)
 }
 
 .form-icon-group {
@@ -1775,7 +1775,7 @@ p.text-muted:where(.uc-dark) {
     min-height: var(--uc-nav-height, 48px) !important
 }
 .uc-navbar-item, .uc-navbar-nav>li>a.active {
-    color: #3faec2;
+    color: #20A4C8;
 }
 .uc-navbar-float {
     position: absolute;
