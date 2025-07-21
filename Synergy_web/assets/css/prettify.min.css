@@ -48,3 +48,37 @@ ol.linenums li {
 .text-justify {
   text-align: justify;
 }
+.list-style1 li {
+  list-style-type: none;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed rgba(225, 223, 223, 0.1);
+}
+.list-style6 {
+	list-style: none
+}
+.list-style6 li {
+	font-size: 16px;
+	line-height: 34px;
+	padding-left: 30px;
+	position: relative
+}
+.list-style6 li:last-child {
+	margin-bottom: 0
+}
+.list-style6 li:before {
+	content: "\e64c";
+	font-family: 'themify';
+	font-size: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 35px;
+	color: #3faec2;
+}
+@media screen and (max-width: 767px) {
+	.list-style6 li {
+		font-size: 15px;
+		line-height: 32px
+	}
+}
