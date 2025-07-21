@@ -1,0 +1,116 @@
+.com { color: #6b7188; }
+.lit { color: #ebc66d; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #fa6f6c; }
+.str, .atv { color: #6cb8f7; }
+.kwd, .linenums .tag { color: #7281b2; }
+.typ, .atn, .dec, .var { color: #ffffff; }
+.pln { color: #f477b1; }
+
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 18px;
+  text-shadow: 0 1px 0 #fff;
+}
+.text-color-synergy-gradient {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #b44c9c, #3faec2 74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.text-gradient {
+  background-color: var(--gradient-first);
+  background-image: linear-gradient(var(--gradient-angle),var(--gradient-first),var(--gradient-second));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0);
+  background: linear-gradient(45deg,var(--color-primary),var(--color-tertiary),var(--color-tertiary));
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0,0,0,0)
+}
+.text-justify {
+  text-align: justify;
+}
+.list-style1 li {
+  list-style-type: none;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed rgba(225, 223, 223, 0.1);
+}
+.list-style4 {
+	list-style: none;
+	padding: 0
+}
+.list-style4 li {
+	font-weight: 500;
+	position: relative;
+	padding: 0 0 0 40px;
+	margin: 0 0 14px 0
+}
+.list-style4 li span {
+	position: absolute;
+	top: 3px;
+	right: 0
+}
+.list-style4 li:last-child {
+	margin-bottom: 0
+}
+.list-style4 li:before {
+	content: "\eb2e";
+	font-family: 'Unicons';
+	color: #ffffff;
+	font-size: 18px;
+	background: #198754;
+	margin-right: 12px;
+	border-radius: 6px;
+	padding: 6px;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	line-height: 12px
+}
+.list-style6 {
+	list-style: none
+}
+.list-style6 li {
+	font-size: 16px;
+	line-height: 34px;
+	padding-left: 30px;
+	position: relative
+}
+.list-style6 li:last-child {
+	margin-bottom: 0
+}
+.list-style6 li:before {
+	content: "\eb2e";
+	font-family: 'Unicons';
+	font-size: 29px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 35px;
+	color: #3faec2;
+}
+@media screen and (max-width: 767px) {
+	.list-style6 li {
+		font-size: 29px;
+		line-height: 32px
+	}
+}
