@@ -86,7 +86,7 @@
     --font-family-primary: "PolySans", "IBM Plex Sans Arabic", sans-serif;
     --font-family-secondary: "PolySans", "IBM Plex Sans Arabic", serif;
     --font-family-tertiary: "PolySans", "IBM Plex Sans Arabic", serif;
-    --font-family-philosopher: 'Philosopher', sans-serif;
+    /* --font-family-philosopher: 'Philosopher', sans-serif; */
     /* --font-family-primary: "Orbitron", sans-serif;
     --font-family-secondary: "Orbitron", sans-serif;
     --font-family-tertiary: "Orbitron", sans-serif; */
@@ -771,7 +771,7 @@ a:hover {
 
 .display-5, .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-philosopher) !important;
+    font-family: var(--heading-font-typeface, sans-serif)!important;
     font-weight: var(--heading-font-weight, 700);
     letter-spacing: var(--heading-font-spacing, normal);
     font-style: var(--heading-font-style, normal);
@@ -3270,6 +3270,7 @@ header.uc-header.header-six>.uc-navbar-sticky .uc-navbar-main .uc-navbar {
     --bs-quaternary-800: #55564e;
     --bs-quaternary-900: #2a2b27;
     --bs-primary-rgb: 63, 174, 194;
+    --bs-synergy-magenta-rgb: 180, 76, 156;
     --bs-secondary-rgb: 243, 236, 231;
     --bs-success-rgb: 76, 175, 80;
     --bs-info-rgb: 0, 153, 204;
